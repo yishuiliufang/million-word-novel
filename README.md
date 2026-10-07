@@ -1,4 +1,4 @@
-﻿# million-word-novel（百万字长篇小说）
+﻿# Long-Context Narrative Operating System（百万字长篇小说）
 
 一个能真正写完 100 万字长篇小说的 DSH skill。
 
