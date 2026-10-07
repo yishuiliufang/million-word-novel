@@ -80,7 +80,7 @@ million-word-novel/
 
 ## 停止条件
 
-**只有 `total_chars >= target_chars`。** 到上限就转世，达标就停止。
+**只有 `total_chars >= target_chars`。** 到上限就结束，达标就停止。
 
 ## 三种字数口径
 
