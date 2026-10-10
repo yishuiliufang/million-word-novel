@@ -1,0 +1,115 @@
+{
+  "chapter": 6,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0006.md",
+  "sha256": "59d21e26190d44ad43711dbf7a284d4eb48b6b6660cdadb1687abab2320532c4",
+  "chars": 2414,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2414,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 99,
+      "avg_paragraph": 24.6,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0238,
+      "dialogue": 41
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：2025年5月9×3；。苏巴特尔把这句×3；苏巴特尔把这句话×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "2025年5月9",
+            "count": 3
+          },
+          {
+            "phrase": "。苏巴特尔把这句",
+            "count": 3
+          },
+          {
+            "phrase": "苏巴特尔把这句话",
+            "count": 3
+          },
+          {
+            "phrase": "巴特尔把这句话写",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月18日",
+      "timeline_prev": "故事开始年 10月17日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 是账上的 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：2025年5月9×3；。苏巴特尔把这句×3；苏巴特尔把这句话×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "2025年5月9",
+          "count": 3
+        },
+        {
+          "phrase": "。苏巴特尔把这句",
+          "count": 3
+        },
+        {
+          "phrase": "苏巴特尔把这句话",
+          "count": 3
+        },
+        {
+          "phrase": "巴特尔把这句话写",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 是账上的 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

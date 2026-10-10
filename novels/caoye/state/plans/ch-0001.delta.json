@@ -1,0 +1,151 @@
+{
+ "schema": 1,
+ "chapter": 1,
+ "title": "初花期",
+ "place": "巴音乌拉草场",
+ "arc": "A1-回乡",
+ "summary": "父亲苏巴特尔累死在割晒机旁。苏牧回到巴音乌拉草场，用留茬高度和刈割记录算出父亲把苜蓿割晚了十一天，并从父亲的冬料手账里算出冬天差三十吨干草。他在割晒机扶手上找到父亲写的纸条（账本在库房，别卖牛），在棚里发现一箱没有品种名、汇款人栏空白的苜蓿种子。娜仁烧纸钱时把旧库房钥匙压在香灰下，说出九年前冬天死牛九十七头，苏牧第一次知道自己继承的不只是牛。",
+ "timeline": {"world_time": "故事开始年 9月下旬至10月上旬，寒流抵达前", "note": "苏巴特尔死于9月下旬，第1章叙述发生在遗体运走后的第四天"},
+ "entities": {
+  "characters": [
+   {"name": "苏牧"},
+   {"name": "苏巴特尔"},
+   {"name": "娜仁"}
+  ],
+  "locations": [
+   {"name": "巴音乌拉草场"},
+   {"name": "苏家牛场"},
+   {"name": "南方饲料企业实验室"}
+  ],
+  "organizations": [
+   {"name": "呼伦贝尔牧业研究院"}
+  ],
+  "items": [
+   {"name": "父亲的扶手纸条"},
+   {"name": "父亲最后一批无品种名苜蓿种子"},
+   {"name": "父亲的冬料手账"},
+   {"name": "父亲旧库房钥匙"},
+   {"name": "刻着牧字的起子"}
+  ]
+ },
+ "character_changes": [
+  {"character": "苏牧", "field": "location", "before": null, "after": "巴音乌拉草场（苏家牛场）", "source": "ch1"},
+  {"character": "苏牧", "field": "emotion", "before": null, "after": "以数据为壳自我封闭；拒绝承认自己算不出父亲为何不肯先割", "source": "ch1"},
+  {"character": "苏牧", "field": "goal", "before": "让父亲留下的牛活下去，让草场不再被救命的苜蓿吃空", "after": "先弄清算不清的账，再决定牛和草怎么救", "source": "ch1"},
+  {"character": "苏牧", "field": "possession", "before": null, "after": "父亲的扶手纸条", "source": "ch1"},
+  {"character": "苏牧", "field": "knowledge", "before": null, "after": "知道父亲割晚了十一天、冬天差三十吨干草、牛场有第二本账本", "source": "ch1"},
+  {"character": "苏巴特尔", "field": "status", "before": "alive", "after": "dead", "source": "ch1"},
+  {"character": "苏巴特尔", "field": "health", "before": null, "after": "已死（累死在割晒机旁）", "source": "ch1"},
+  {"character": "苏巴特尔", "field": "emotion", "before": null, "after": "赶在寒流前收完最后一垄苜蓿的执念", "source": "ch1"},
+  {"character": "娜仁", "field": "emotion", "before": null, "after": "强撑；用烧纸钱和沉默代替求助，不向儿子开口要帮", "source": "ch1"},
+  {"character": "娜仁", "field": "possession", "before": null, "after": "父亲旧库房的钥匙", "source": "ch1"}
+ ],
+ "events": [
+  {
+   "code": "E1-1",
+   "kind": "discovery",
+   "summary": "苏牧在南方的实验室接到娜仁电话，得知苏巴特尔进了卫生院。他没有先问病情，而是问父亲最后一次割是哪一天、割的是哪片地。",
+   "participants": ["苏牧", "娜仁"],
+   "location": "南方饲料企业实验室",
+   "timeline_at": "故事开始年 9月下旬",
+   "confidence": 0.95
+  },
+  {
+   "code": "E1-2",
+   "kind": "loss",
+   "summary": "苏巴特尔累死在割晒机旁。遗体三天前已被殡仪车运走，牛场没有哭声。",
+   "participants": ["苏巴特尔", "娜仁"],
+   "location": "巴音乌拉草场",
+   "timeline_at": "故事开始年 9月下旬",
+   "effects": ["E1-3"],
+   "irreversible": true,
+   "confidence": 0.95
+  },
+  {
+   "code": "E1-3",
+   "kind": "discovery",
+   "summary": "苏牧回到巴音乌拉草场，用叶柄三叶期、留茬高度和父亲的刈割记录算出：苜蓿最晚九月底该收，父亲十月九日割了北边最后一垄，晚了十一天。",
+   "participants": ["苏牧"],
+   "location": "巴音乌拉草场",
+   "causes": ["E1-2"],
+   "effects": ["E1-5"],
+   "timeline_at": "故事开始年 10月上旬",
+   "confidence": 0.9
+  },
+  {
+   "code": "E1-4",
+   "kind": "discovery",
+   "summary": "苏牧在割晒机扶手压着的毡帽下找到父亲的纸条：账本在库房。别卖牛。",
+   "participants": ["苏牧"],
+   "location": "巴音乌拉草场",
+   "timeline_at": "故事开始年 10月上旬",
+   "confidence": 0.95
+  },
+  {
+   "code": "E1-5",
+   "kind": "discovery",
+   "summary": "苏牧在打捆机说明书背面找到父亲的冬料手账，算出118头母牛冬歇期110天需干草约100吨，父亲自己写下的结论是不够，差三成，即差约三十吨。",
+   "participants": ["苏牧"],
+   "location": "巴音乌拉草场",
+   "causes": ["E1-3"],
+   "timeline_at": "故事开始年 10月上旬",
+   "confidence": 0.9
+  },
+  {
+   "code": "E1-6",
+   "kind": "discovery",
+   "summary": "苏牧在棚子里发现父亲最后一批紫花苜蓿种子一箱，约十二公斤。包装袋上没有品种名、播种量和产地，绳结上压着一张汇款单，汇款人栏空白，收款人是苏巴特尔。",
+   "participants": ["苏牧", "娜仁"],
+   "location": "苏家牛场",
+   "timeline_at": "故事开始年 10月上旬",
+   "confidence": 0.9
+  },
+  {
+   "code": "E1-7",
+   "kind": "conflict",
+   "summary": "娜仁烧纸钱时把父亲旧库房的钥匙压在香灰下，说父亲留话等她回来再看；苏牧追问账目，娜仁只说九年前冬天死的是九十七头牛，然后闭口。她拒绝苏牧提出的帮忙。",
+   "participants": ["苏牧", "娜仁"],
+   "location": "苏家牛场",
+   "timeline_at": "故事开始年 10月上旬 夜",
+   "confidence": 0.9
+  }
+ ],
+ "relationships": [
+  {"from": "苏牧", "to": "娜仁", "kind": "母子"},
+  {"from": "苏牧", "to": "苏巴特尔", "kind": "父子"},
+  {"from": "娜仁", "to": "苏巴特尔", "kind": "夫妻"}
+ ],
+ "knowledge_added": [
+  {"knower": "苏牧", "fact_code": "K1-1", "fact_text": "苜蓿宜在三叶期至初花期刈割，留茬4至6厘米；晚于九月底收割会伤及再生层", "source": "E1-3"},
+  {"knower": "苏牧", "fact_code": "K1-2", "fact_text": "苏巴特尔把北边苜蓿地种在了天然草场的边际线上，那片地去年五月还是天然草场", "source": "E1-3"},
+  {"knower": "苏牧", "fact_code": "K1-3", "fact_text": "118头母牛冬歇期110天需干草约100吨，父亲手算结论是差三成、差约三十吨", "source": "E1-5"},
+  {"knower": "苏牧", "fact_code": "K1-4", "fact_text": "牛场有一本父亲放在旧库房里的账本", "source": "E1-4", "secret": true},
+  {"knower": "苏牧", "fact_code": "K1-5", "fact_text": "九年前冬天苏家死牛九十七头", "source": "E1-7"},
+  {"knower": "苏牧", "fact_code": "K1-6", "fact_text": "棚里有一箱无品种名苜蓿种子，汇款单汇款人栏空白", "source": "E1-6"},
+  {"knower": "娜仁", "fact_code": "K1-7", "fact_text": "父亲把旧库房钥匙交给她，留话说等苏牧回来再看", "source": "E1-7", "secret": true}
+ ],
+ "items": [
+  {"code": "IT1-1", "name": "父亲的扶手纸条", "holder": "苏牧", "location": "苏牧口袋", "state": "纸条上写着账本在库房、别卖牛"},
+  {"code": "IT1-2", "name": "父亲最后一批无品种名苜蓿种子", "holder": "苏巴特尔", "location": "苏家牛场棚子", "state": "约十二公斤，汇款人栏空白，未开封"},
+  {"code": "IT1-3", "name": "父亲的冬料手账", "holder": "苏巴特尔", "location": "打捆机说明书背面", "state": "已读，结论为冬天差三成干草"},
+  {"code": "IT1-4", "name": "父亲旧库房钥匙", "holder": "娜仁", "location": "棚圈外香灰下", "state": "被压在香灰下，苏牧尚不知库房位置"},
+  {"code": "IT1-5", "name": "刻着牧字的起子", "holder": "苏巴特尔", "location": "割晒机车斗", "state": "苏牧十二岁时父亲做的第一件工具"}
+ ],
+ "foreshadowing": [
+  {"code": "F001", "action": "plant", "status": "PLANTED", "planned_payoff_start": 4, "planned_payoff_end": 6, "note": "以扶手纸条形式出现：账本在库房。账本内容不揭", "entities": ["苏牧", "苏巴特尔", "娜仁"], "threads": ["T2"]},
+  {"code": "F002", "action": "plant", "status": "PLANTED", "planned_payoff_start": 8, "planned_payoff_end": 12, "note": "棚里一箱无品种名苜蓿种子，汇款单汇款人栏空白；来源与老周均未出现", "entities": ["苏牧", "苏巴特尔"], "threads": ["T3", "T4"]},
+  {"code": "F003", "action": "plant", "status": "PLANTED", "planned_payoff_start": 3, "planned_payoff_end": 5, "note": "娜仁把旧库房钥匙压在香灰下，留话等苏牧回来再看；库房位置与内容不揭", "entities": ["娜仁", "苏巴特尔"], "threads": ["T2"]},
+  {"code": "F016", "action": "plant", "status": "PLANTED", "planned_payoff_start": 30, "planned_payoff_end": 40, "note": "娜仁说出九年前冬天死牛九十七头，追问时闭口；完整经过不揭", "entities": ["娜仁", "苏巴特尔"], "threads": ["T4"]}
+ ],
+ "plot_threads": [
+  {"code": "T1", "action": "advance", "status": "active", "note": "苏牧从南方技术者回到牛场，草业数据成为他面对父亲遗物的唯一语言"},
+  {"code": "T2", "action": "advance", "status": "active", "note": "父亲之死打开三代人的账；娜仁的沉默与苏牧的数据化防御互为镜像"},
+  {"code": "T4", "action": "advance", "status": "active", "note": "苜蓿地被父亲种到天然草场边际线上；冬料差三成建立气候与存栏压力"}
+ ],
+ "scenes": [
+  {"scene_no": 1, "location": "南方饲料企业实验室", "participants": ["苏牧"], "conflict": "公司要按十月九日的报价走一批进口苜蓿，苏牧算出要多付十九万六；娜仁的电话打来时他先问的是父亲最后一次割是哪一天，而不是问病情。", "summary": "深夜实验室，苏牧用自建的苜蓿蛋白预测模型挡下客户的报价，接到娜仁电话，得知父亲进了卫生院。他算出父亲割晚了十一天，然后带着三年的旧纸箱回到草原。", "dialogue_function": "确立苏牧的数据化人格：把亲人的死因当作待求解的方程。"},
+  {"scene_no": 2, "location": "巴音乌拉草场 苜蓿地", "participants": ["苏牧", "娜仁"], "conflict": "苏牧用量和记录算出父亲割晚了十一天，算出冬料差三成；他算得越准，越无法解释父亲明知还要割。他只能得出父亲明知而为之，这比任何数字都难接受。", "summary": "苏牧在割晒机旁见到父亲遗物，量留茬、翻刈割记录和冬料手账，算出晚了十一天与差三十吨。他在毡帽下找到父亲的纸条，在棚里发现一箱无品种名种子。娜仁第一次点明：北边那片地是他知道是草场还开垦的。", "dialogue_function": "让父亲的技术错误与意志错误同时显影；纸条承担遗言，种子承担来源之谜。"},
+  {"scene_no": 3, "location": "苏家牛场 棚圈外", "participants": ["苏牧", "娜仁"], "conflict": "娜仁用『我还没到要人帮忙的地步』把苏牧的帮忙推回去，用『九十七头』把话岔开。她要守住这个数，苏牧要追问的就是这个。母亲的沉默与儿子的追问在同一堆香灰上互相抵死。", "summary": "夜里棚圈外，娜仁烧纸钱，把旧库房钥匙压在香灰下，说父亲留话等她回来再看。苏牧追问账目，娜仁只说九年前死了九十七头牛，然后闭口。", "dialogue_function": "把家庭债与草场债并置：娜仁守着一个数，苏牧想算的是一笔账。"}
+ ],
+ "source": "human"
+}

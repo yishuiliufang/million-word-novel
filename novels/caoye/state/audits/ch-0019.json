@@ -1,0 +1,284 @@
+{
+  "chapter": 19,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0019.md",
+  "sha256": "866b24b4ec3ebb6b44e30516fbbad48824ef02bce0d52488bb54e300066ef0a4",
+  "chars": 3258,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 3258,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 141,
+      "avg_paragraph": 23.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0532,
+      "dialogue": 148
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"她说，\"你爹×5；救了唐远山的牛。×5；我欠你爹一条命。×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"她说，\"你爹",
+            "count": 5
+          },
+          {
+            "phrase": "救了唐远山的牛。",
+            "count": 5
+          },
+          {
+            "phrase": "我欠你爹一条命。",
+            "count": 4
+          },
+          {
+            "phrase": "欠你爹一条命。\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"阿木尔说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "你爹救了唐远山的",
+            "count": 4
+          },
+          {
+            "phrase": "爹救了唐远山的牛",
+            "count": 4
+          },
+          {
+            "phrase": "欠你爹一份人情。",
+            "count": 4
+          },
+          {
+            "phrase": "你爹一份人情。你",
+            "count": 4
+          },
+          {
+            "phrase": "\"你爹救了老周，",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"你爹",
+            "count": 4
+          },
+          {
+            "phrase": "老周欠你爹一条命",
+            "count": 4
+          },
+          {
+            "phrase": "。\"唐远山说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"唐远山没有说",
+            "count": 4
+          },
+          {
+            "phrase": "\"唐远山没有说话",
+            "count": 4
+          },
+          {
+            "phrase": "唐远山没有说话。",
+            "count": 4
+          },
+          {
+            "phrase": "远山没有说话。\"",
+            "count": 4
+          },
+          {
+            "phrase": "我爹一份人情。\"",
+            "count": 4
+          },
+          {
+            "phrase": "说，\"九三年白灾",
+            "count": 3
+          },
+          {
+            "phrase": "，\"九三年白灾，",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"她说，\"你爹×5；救了唐远山的牛。×5；我欠你爹一条命。×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"她说，\"你爹",
+          "count": 5
+        },
+        {
+          "phrase": "救了唐远山的牛。",
+          "count": 5
+        },
+        {
+          "phrase": "我欠你爹一条命。",
+          "count": 4
+        },
+        {
+          "phrase": "欠你爹一条命。\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"阿木尔说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "你爹救了唐远山的",
+          "count": 4
+        },
+        {
+          "phrase": "爹救了唐远山的牛",
+          "count": 4
+        },
+        {
+          "phrase": "欠你爹一份人情。",
+          "count": 4
+        },
+        {
+          "phrase": "你爹一份人情。你",
+          "count": 4
+        },
+        {
+          "phrase": "\"你爹救了老周，",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"你爹",
+          "count": 4
+        },
+        {
+          "phrase": "老周欠你爹一条命",
+          "count": 4
+        },
+        {
+          "phrase": "。\"唐远山说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"唐远山没有说",
+          "count": 4
+        },
+        {
+          "phrase": "\"唐远山没有说话",
+          "count": 4
+        },
+        {
+          "phrase": "唐远山没有说话。",
+          "count": 4
+        },
+        {
+          "phrase": "远山没有说话。\"",
+          "count": 4
+        },
+        {
+          "phrase": "我爹一份人情。\"",
+          "count": 4
+        },
+        {
+          "phrase": "说，\"九三年白灾",
+          "count": 3
+        },
+        {
+          "phrase": "，\"九三年白灾，",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

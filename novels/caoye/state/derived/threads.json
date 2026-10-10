@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "code": "T1",
+    "name": "草与人的活路",
+    "kind": "main",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "苏牧从计算者变成牧人，找到可持续草业模式",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 2,
+    "code": "T2",
+    "name": "家庭线",
+    "kind": "sub",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "父亲遗产、母亲娜仁、女儿苏禾；三代人重建信任",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 3,
+    "code": "T3",
+    "name": "资本线",
+    "kind": "sub",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "唐远山远山草业与草场流转，中国草业第一股之梦",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 4,
+    "code": "T4",
+    "name": "生态线",
+    "kind": "sub",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "草场退化、连作病、白灾、狼群；自然反噬",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 5,
+    "code": "T5",
+    "name": "情感线",
+    "kind": "sub",
+    "status": "planned",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "苏牧与林晚：女儿的母亲与调查同盟的双重关系",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 6,
+    "code": "T6",
+    "name": "政策线",
+    "kind": "sub",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "草畜平衡、生态补偿、草原法在旗一级的真实运作",
+    "arc": null,
+    "data": {}
+  },
+  {
+    "id": 7,
+    "code": "T7",
+    "name": "传承线",
+    "kind": "sub",
+    "status": "active",
+    "opened_chapter": 0,
+    "closed_chapter": null,
+    "goal": "阿娜尔祖父的口述草场记忆与苏牧的草业数据如何相遇",
+    "arc": null,
+    "data": {}
+  }
+]

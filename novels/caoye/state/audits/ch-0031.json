@@ -1,0 +1,476 @@
+{
+  "chapter": 31,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0031.md",
+  "sha256": "a85a64f7900df10f0aaf1a12fc926df8b714aec4d0db073547ad5154b4cbd5fb",
+  "chars": 2533,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2533,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 102,
+      "avg_paragraph": 24.9,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0107,
+      "dialogue": 156
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：生态补偿款。\"\"×5；。\"他说，\"我守×5；\"他说，\"我守草×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "生态补偿款。\"\"",
+            "count": 5
+          },
+          {
+            "phrase": "。\"他说，\"我守",
+            "count": 5
+          },
+          {
+            "phrase": "\"他说，\"我守草",
+            "count": 5
+          },
+          {
+            "phrase": "他说，\"我守草原",
+            "count": 5
+          },
+          {
+            "phrase": "说，\"我守草原。",
+            "count": 5
+          },
+          {
+            "phrase": "守草场，几十年。",
+            "count": 5
+          },
+          {
+            "phrase": "。\"他说，\"乡里",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"没细说。\"",
+            "count": 4
+          },
+          {
+            "phrase": "补的是守草原的人",
+            "count": 4
+          },
+          {
+            "phrase": "的是守草原的人。",
+            "count": 4
+          },
+          {
+            "phrase": "是守草原的人。\"",
+            "count": 4
+          },
+          {
+            "phrase": "的人。\"\"补的是",
+            "count": 4
+          },
+          {
+            "phrase": "人。\"\"补的是守",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"补的是守草",
+            "count": 4
+          },
+          {
+            "phrase": "\"补的是守草原的",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"我爹",
+            "count": 4
+          },
+          {
+            "phrase": "\"他说，\"我爹守",
+            "count": 4
+          },
+          {
+            "phrase": "他说，\"我爹守了",
+            "count": 4
+          },
+          {
+            "phrase": "说，\"我爹守了一",
+            "count": 4
+          },
+          {
+            "phrase": "，\"我爹守了一辈",
+            "count": 4
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人又 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 海生 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：生态补偿款。\"\"×5；。\"他说，\"我守×5；\"他说，\"我守草×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "生态补偿款。\"\"",
+          "count": 5
+        },
+        {
+          "phrase": "。\"他说，\"我守",
+          "count": 5
+        },
+        {
+          "phrase": "\"他说，\"我守草",
+          "count": 5
+        },
+        {
+          "phrase": "他说，\"我守草原",
+          "count": 5
+        },
+        {
+          "phrase": "说，\"我守草原。",
+          "count": 5
+        },
+        {
+          "phrase": "守草场，几十年。",
+          "count": 5
+        },
+        {
+          "phrase": "。\"他说，\"乡里",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"没细说。\"",
+          "count": 4
+        },
+        {
+          "phrase": "补的是守草原的人",
+          "count": 4
+        },
+        {
+          "phrase": "的是守草原的人。",
+          "count": 4
+        },
+        {
+          "phrase": "是守草原的人。\"",
+          "count": 4
+        },
+        {
+          "phrase": "的人。\"\"补的是",
+          "count": 4
+        },
+        {
+          "phrase": "人。\"\"补的是守",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"补的是守草",
+          "count": 4
+        },
+        {
+          "phrase": "\"补的是守草原的",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"我爹",
+          "count": 4
+        },
+        {
+          "phrase": "\"他说，\"我爹守",
+          "count": 4
+        },
+        {
+          "phrase": "他说，\"我爹守了",
+          "count": 4
+        },
+        {
+          "phrase": "说，\"我爹守了一",
+          "count": 4
+        },
+        {
+          "phrase": "，\"我爹守了一辈",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 乡里 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人又 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 那人 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 海生 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

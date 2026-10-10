@@ -1,4 +1,20 @@
 interface:
-  display_name: "Million-Word Novel (轮回引擎)"
-  short_description: "以状态落盘 + 上下文转世的方式续写百万字长篇，达标即停止"
-  default_prompt: "Use $million-word-novel to write a 1,000,000-character novel. Run scripts/novel_state.py next to get the round brief, write only the listed chapters, commit each one immediately, audit it with audit_quality.py --strict, then round-done. On REINCARNATE, write state/last-context.md and restart the loop in a fresh context. On STOP, export and stop."
+  display_name: "Million-Word Novel (长篇叙事持续生产操作系统)"
+  short_description: "以 Canon DB 为长期记忆 + 上下文转世的长篇写作引擎，plan→write→audit→canon→commit→round-done"
+  default_prompt: >
+    Use $million-word-novel to write a 1,000,000-character novel.
+    Memory lives in state/canon.db, not in the context window: run
+    `python scripts/novel_state.py next --root <project>` to get the round brief
+    (four-layer memory: L0 current / L1 local / L2 structure / L3 canon), then for
+    each chapter in chapters_to_write: `plan --chapter N` (a validated Chapter Plan
+    is mandatory), write the chapter into drafts/, produce the Canon Delta with
+    `extract --chapter N`, run `audit --chapter N --strict` (Level 1 text hygiene +
+    Level 2 semantic consistency), and finally `commit --chapter N` which is
+    transactional and refuses to run without a passing audit pinned to the exact
+    text hash. Close the round with `round-done`, which validates twelve conditions
+    and returns ROUND_BLOCKED (exit 3) when the project is not in a legal state.
+    On REINCARNATE, start a fresh context and call `next` again. On STOP, export with
+    `export_novel.py --by-volume --zip` and stop.
+    Never let a model write Canon directly: everything goes through a validated
+    Canon Delta, and any uncertain judgement is recorded as a warning instead of
+    changing Canon.

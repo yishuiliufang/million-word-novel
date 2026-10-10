@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 1,
+  "commit_id": "MAN-4a5fb8ea3af5",
+  "created_at": "2026-10-09T15:55:57",
+  "actor": "human",
+  "reason": "修正ch1：possession需为数组",
+  "patch": {
+    "characters": {
+      "娜仁": {
+        "possession": [
+          "父亲旧库房的钥匙"
+        ]
+      }
+    },
+    "character_changes": [],
+    "foreshadowing": {},
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}

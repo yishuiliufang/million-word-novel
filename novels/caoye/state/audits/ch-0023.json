@@ -1,0 +1,356 @@
+{
+  "chapter": 23,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0023.md",
+  "sha256": "e0df3ede61813854dc52e50925ff992dd89c93685ab6846b5c916bb64ee417d4",
+  "chars": 3232,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 3232,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 136,
+      "avg_paragraph": 23.8,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0093,
+      "dialogue": 115
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"她说，\"我祖×5；不是现在这样子。×5；他记了一辈子。\"×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"她说，\"我祖",
+            "count": 5
+          },
+          {
+            "phrase": "不是现在这样子。",
+            "count": 5
+          },
+          {
+            "phrase": "他记了一辈子。\"",
+            "count": 5
+          },
+          {
+            "phrase": "\"她说，\"我祖父",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧看着阿娜",
+            "count": 4
+          },
+          {
+            "phrase": "\"苏牧看着阿娜尔",
+            "count": 4
+          },
+          {
+            "phrase": "苏牧看着阿娜尔。",
+            "count": 4
+          },
+          {
+            "phrase": "牧看着阿娜尔。\"",
+            "count": 4
+          },
+          {
+            "phrase": "，不是现在这样子",
+            "count": 4
+          },
+          {
+            "phrase": "来了，说明草原还",
+            "count": 4
+          },
+          {
+            "phrase": "。\"阿娜尔说，\"",
+            "count": 3
+          },
+          {
+            "phrase": "说，\"我祖父口述",
+            "count": 3
+          },
+          {
+            "phrase": "。我祖父的口述，",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧没有说话。\"",
+            "count": 3
+          },
+          {
+            "phrase": "我祖父口述的时候",
+            "count": 3
+          },
+          {
+            "phrase": "祖父口述的时候，",
+            "count": 3
+          },
+          {
+            "phrase": "1965年的巴音",
+            "count": 3
+          },
+          {
+            "phrase": "965年的巴音乌",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 祖父 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 父不会 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 祖他 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 我祖他 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"她说，\"我祖×5；不是现在这样子。×5；他记了一辈子。\"×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"她说，\"我祖",
+          "count": 5
+        },
+        {
+          "phrase": "不是现在这样子。",
+          "count": 5
+        },
+        {
+          "phrase": "他记了一辈子。\"",
+          "count": 5
+        },
+        {
+          "phrase": "\"她说，\"我祖父",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧看着阿娜",
+          "count": 4
+        },
+        {
+          "phrase": "\"苏牧看着阿娜尔",
+          "count": 4
+        },
+        {
+          "phrase": "苏牧看着阿娜尔。",
+          "count": 4
+        },
+        {
+          "phrase": "牧看着阿娜尔。\"",
+          "count": 4
+        },
+        {
+          "phrase": "，不是现在这样子",
+          "count": 4
+        },
+        {
+          "phrase": "来了，说明草原还",
+          "count": 4
+        },
+        {
+          "phrase": "。\"阿娜尔说，\"",
+          "count": 3
+        },
+        {
+          "phrase": "说，\"我祖父口述",
+          "count": 3
+        },
+        {
+          "phrase": "。我祖父的口述，",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧没有说话。\"",
+          "count": 3
+        },
+        {
+          "phrase": "我祖父口述的时候",
+          "count": 3
+        },
+        {
+          "phrase": "祖父口述的时候，",
+          "count": 3
+        },
+        {
+          "phrase": "1965年的巴音",
+          "count": 3
+        },
+        {
+          "phrase": "965年的巴音乌",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 祖父 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 父不会 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 祖他 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 我祖他 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

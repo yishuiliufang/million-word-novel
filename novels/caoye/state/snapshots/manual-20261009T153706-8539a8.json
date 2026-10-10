@@ -1,0 +1,534 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 0,
+  "commit_id": "MAN-b7a5168539a8",
+  "created_at": "2026-10-09T15:37:06",
+  "actor": "human",
+  "reason": "bible.md 导入",
+  "patch": {
+    "entities": [
+      {
+        "kind": "character",
+        "name": "苏牧",
+        "status": "alive",
+        "data": {
+          "identity": "36岁，中国农大草业科学博士，从南方饲料企业回乡接手牛场",
+          "desire": "让父亲留下的牛活下去，让草场不再被救命的苜蓿吃空",
+          "flaw": "把草原当可计算的系统，用数据压制人情，宁可算错也不承认草不听话",
+          "destiny": "从计算者变成牧人，学会承认草有脾气"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "苏巴特尔",
+        "status": "alive",
+        "data": {
+          "identity": "58岁，苏牧之父，苏家牛场主",
+          "desire": "让儿子接班，让牛场不垮",
+          "flaw": "用人的意志压过草场规律，为保牛把苜蓿地扩到草场边缘并欠下巨债",
+          "destiny": "第1章为赶在寒流前收完最后一垄苜蓿累死在割晒机旁"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "娜仁",
+        "status": "alive",
+        "data": {
+          "identity": "56岁，蒙古族牧民，苏牧之母",
+          "desire": "保住牛场，不让儿子再次离开",
+          "flaw": "用沉默和眼泪索取，宁可自己撑垮也不让儿子帮忙",
+          "destiny": "崩溃后与儿子重建平等关系"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "唐远山",
+        "status": "alive",
+        "data": {
+          "identity": "45岁，远山草业集团董事长",
+          "desire": "用苜蓿基地做成中国草业第一股并出口海外",
+          "flaw": "把草原当资产负债表，看不见生态代价；九三年白灾害死过一个牧场",
+          "destiny": "从掠夺者变成被迫承担者"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "林晚",
+        "status": "alive",
+        "data": {
+          "identity": "33岁，环境调查记者，苏禾之母",
+          "desire": "把草原生态议题写进公共视野",
+          "flaw": "用正义代替理解，拒绝与利益方合作，调查屡屡卡死",
+          "destiny": "与苏牧结成不平等但真实的同盟"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "赵海生",
+        "status": "alive",
+        "data": {
+          "identity": "62岁，塔布森旗草业技术推广站站长",
+          "desire": "退休前看到草畜平衡真正落地",
+          "flaw": "明知政策有漏洞却用文件搪塞，签过不该签的字",
+          "destiny": "在最后一根稻草上选择说真话"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "巴特尔·阿木尔",
+        "status": "alive",
+        "data": {
+          "identity": "28岁，年轻牧民，草场流转受益人",
+          "desire": "用流转款给孩子买房并给孩子出路",
+          "flaw": "短视地把世代草场换成一笔现金，签下无法撤销的债",
+          "destiny": "成为卷二流转风波的引爆者"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "阿娜尔",
+        "status": "alive",
+        "data": {
+          "identity": "41岁，草场管护员，老牧民的独生女",
+          "desire": "把祖父口述的草场记忆写成文字",
+          "flaw": "用传统对抗一切现代方案，包括救命的药",
+          "destiny": "把口述记忆交给苏牧，成为技术与传统的接口"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "苏禾",
+        "status": "alive",
+        "data": {
+          "identity": "6岁，苏牧之女，随林晚在城里生活",
+          "desire": "有爸爸，能天天看见他",
+          "flaw": "用一幅绿色的山提醒父亲草是活的",
+          "destiny": "在草原上长大，学会辨认三叶期"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "character",
+        "name": "老周",
+        "status": "alive",
+        "data": {
+          "identity": "55岁，草种中介，苏巴特尔的旧识",
+          "desire": "把一批来历不明的苜蓿种子卖出去",
+          "flaw": "只谈钱不问后果，种子的真相只在他一个人心里",
+          "destiny": "苜蓿种子真相的关键证人"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "塔布森旗",
+        "data": {
+          "note": "虚构的内蒙古草原旗，半干旱农牧交错带，年均降水380毫米"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "巴音乌拉草场",
+        "data": {
+          "note": "苏家草场，56000亩；天然草场41000亩、人工苜蓿地15000亩"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "那林河",
+        "data": {
+          "note": "草场东侧的河，白灾时唯一稳定取水点；下游水色异常是退化信号"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "苏家牛场",
+        "data": {
+          "note": "棚圈、青贮窖与打捆机库，现存母牛118头"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "父亲旧库房",
+        "data": {
+          "note": "娜仁从不让人进的那间库房，藏着父亲最后一批合同与账册"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "organization",
+        "name": "远山草业集团",
+        "data": {
+          "note": "唐远山的公司，拟建苜蓿出口基地"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "organization",
+        "name": "塔布森旗草业技术推广站",
+        "data": {
+          "note": "赵海生所在，负责草畜平衡核定与推广"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "organization",
+        "name": "呼伦贝尔牧业研究院",
+        "data": {
+          "note": "苏牧博士毕业单位，其苜蓿蛋白检测模型被南方企业采用"
+        },
+        "first_chapter": 0
+      },
+      {
+        "kind": "location",
+        "name": "那林河下游湿地",
+        "data": {
+          "note": "草场退化的第一处指标地"
+        },
+        "first_chapter": 0
+      }
+    ],
+    "characters": {},
+    "character_changes": [
+      {
+        "character": "苏牧",
+        "field": "goal",
+        "before": null,
+        "after": "让父亲留下的牛活下去，让草场不再被救命的苜蓿吃空",
+        "source": "import-md"
+      },
+      {
+        "character": "苏巴特尔",
+        "field": "goal",
+        "before": null,
+        "after": "让儿子接班，让牛场不垮",
+        "source": "import-md"
+      },
+      {
+        "character": "娜仁",
+        "field": "goal",
+        "before": null,
+        "after": "保住牛场，不让儿子再次离开",
+        "source": "import-md"
+      },
+      {
+        "character": "唐远山",
+        "field": "goal",
+        "before": null,
+        "after": "用苜蓿基地做成中国草业第一股并出口海外",
+        "source": "import-md"
+      },
+      {
+        "character": "林晚",
+        "field": "goal",
+        "before": null,
+        "after": "把草原生态议题写进公共视野",
+        "source": "import-md"
+      },
+      {
+        "character": "赵海生",
+        "field": "goal",
+        "before": null,
+        "after": "退休前看到草畜平衡真正落地",
+        "source": "import-md"
+      },
+      {
+        "character": "巴特尔·阿木尔",
+        "field": "goal",
+        "before": null,
+        "after": "用流转款给孩子买房并给孩子出路",
+        "source": "import-md"
+      },
+      {
+        "character": "阿娜尔",
+        "field": "goal",
+        "before": null,
+        "after": "把祖父口述的草场记忆写成文字",
+        "source": "import-md"
+      },
+      {
+        "character": "苏禾",
+        "field": "goal",
+        "before": null,
+        "after": "有爸爸，能天天看见他",
+        "source": "import-md"
+      },
+      {
+        "character": "老周",
+        "field": "goal",
+        "before": null,
+        "after": "把一批来历不明的苜蓿种子卖出去",
+        "source": "import-md"
+      }
+    ],
+    "foreshadowing": {
+      "F001": {
+        "title": "父亲的第二本账册：牛场真实负债与草场流转意向",
+        "status": "PLANTED",
+        "planted_chapter": 1,
+        "planned_payoff_start": 4,
+        "planned_payoff_end": 6
+      },
+      "F002": {
+        "title": "父亲最后一批苜蓿种子，包装袋上没有品种名",
+        "status": "PLANTED",
+        "planted_chapter": 1,
+        "planned_payoff_start": 8,
+        "planned_payoff_end": 12
+      },
+      "F003": {
+        "title": "娜仁把旧库房钥匙压在香灰下：你爹说，等你能回来再看",
+        "status": "PLANTED",
+        "planted_chapter": 1,
+        "planned_payoff_start": 3,
+        "planned_payoff_end": 5
+      },
+      "F004": {
+        "title": "那林河下游的水比十年前清了，颜色发白",
+        "status": "PLANTED",
+        "planted_chapter": 2,
+        "planned_payoff_start": 12,
+        "planned_payoff_end": 16
+      },
+      "F005": {
+        "title": "赵海生抽屉里那份没签字的草畜平衡核定表",
+        "status": "PLANTED",
+        "planted_chapter": 3,
+        "planned_payoff_start": 7,
+        "planned_payoff_end": 10
+      },
+      "F006": {
+        "title": "唐远山提起九三年那次白灾时改了语气",
+        "status": "PLANTED",
+        "planted_chapter": 4,
+        "planned_payoff_start": 10,
+        "planned_payoff_end": 14
+      },
+      "F007": {
+        "title": "巴特尔的草场流转合同里不可撤销三个字",
+        "status": "PLANTED",
+        "planted_chapter": 6,
+        "planned_payoff_start": 12,
+        "planned_payoff_end": 18
+      },
+      "F008": {
+        "title": "阿娜尔祖父的口述：三十年前巴音乌拉不是现在的样子",
+        "status": "PLANTED",
+        "planted_chapter": 7,
+        "planned_payoff_start": 20,
+        "planned_payoff_end": 26
+      },
+      "F009": {
+        "title": "苏禾在幼儿园画的绿色的山，山上有九十七头牛",
+        "status": "PLANTED",
+        "planted_chapter": 8,
+        "planned_payoff_start": 16,
+        "planned_payoff_end": 22
+      },
+      "F010": {
+        "title": "林晚调查笔记里被划掉的那个牧场名字",
+        "status": "PLANTED",
+        "planted_chapter": 9,
+        "planned_payoff_start": 18,
+        "planned_payoff_end": 24
+      },
+      "F011": {
+        "title": "苜蓿地里的豆象与根结线虫，连作病早期",
+        "status": "PLANTED",
+        "planted_chapter": 10,
+        "planned_payoff_start": 14,
+        "planned_payoff_end": 20
+      },
+      "F012": {
+        "title": "冻毙在草沟里的那头牛，胃里塞满未消化的青贮料",
+        "status": "PLANTED",
+        "planted_chapter": 12,
+        "planned_payoff_start": 24,
+        "planned_payoff_end": 30
+      },
+      "F013": {
+        "title": "唐远山股权协议里生态补偿款这个科目",
+        "status": "PLANTED",
+        "planted_chapter": 14,
+        "planned_payoff_start": 26,
+        "planned_payoff_end": 34
+      },
+      "F014": {
+        "title": "父亲手机通讯录里一个叫老周的号码",
+        "status": "PLANTED",
+        "planted_chapter": 3,
+        "planned_payoff_start": 9,
+        "planned_payoff_end": 15
+      },
+      "F015": {
+        "title": "草原边缘突然出现的狼群",
+        "status": "PLANTED",
+        "planted_chapter": 16,
+        "planned_payoff_start": 28,
+        "planned_payoff_end": 38
+      },
+      "F016": {
+        "title": "娜仁反复念叨那年冬天死的是九十七头",
+        "status": "PLANTED",
+        "planted_chapter": 1,
+        "planned_payoff_start": 30,
+        "planned_payoff_end": 40
+      }
+    },
+    "threads": {
+      "T1": {
+        "name": "草与人的活路",
+        "kind": "main",
+        "goal": "苏牧从计算者变成牧人，找到可持续草业模式",
+        "status": "active",
+        "opened_chapter": 0
+      },
+      "T2": {
+        "name": "家庭线",
+        "kind": "sub",
+        "goal": "父亲遗产、母亲娜仁、女儿苏禾；三代人重建信任",
+        "status": "active",
+        "opened_chapter": 0
+      },
+      "T3": {
+        "name": "资本线",
+        "kind": "sub",
+        "goal": "唐远山远山草业与草场流转，中国草业第一股之梦",
+        "status": "planned",
+        "opened_chapter": 0
+      },
+      "T4": {
+        "name": "生态线",
+        "kind": "sub",
+        "goal": "草场退化、连作病、白灾、狼群；自然反噬",
+        "status": "active",
+        "opened_chapter": 0
+      },
+      "T5": {
+        "name": "情感线",
+        "kind": "sub",
+        "goal": "苏牧与林晚：女儿的母亲与调查同盟的双重关系",
+        "status": "planned",
+        "opened_chapter": 0
+      },
+      "T6": {
+        "name": "政策线",
+        "kind": "sub",
+        "goal": "草畜平衡、生态补偿、草原法在旗一级的真实运作",
+        "status": "active",
+        "opened_chapter": 0
+      },
+      "T7": {
+        "name": "传承线",
+        "kind": "sub",
+        "goal": "阿娜尔祖父的口述草场记忆与苏牧的草业数据如何相遇",
+        "status": "planned",
+        "opened_chapter": 0
+      }
+    },
+    "world_rules": [
+      {
+        "code": "R1",
+        "text": "塔布森旗草场按草畜平衡核定载畜量，天然草场基本口粮按每亩0.3羊单位计，牛按6羊单位折算；超载须削减存栏",
+        "first_chapter": 1,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R2",
+        "text": "苜蓿宜在三叶期至初花期刈割，留茬4至6厘米；留茬低于4厘米伤根，次年再生量降15%以上",
+        "first_chapter": 1,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R3",
+        "text": "苜蓿为多年生豆科，连作四到五年后根结线虫与豆象加重，必须轮作或轮牧",
+        "first_chapter": 10,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R4",
+        "text": "青贮含水率须65%正负5%，24小时内压实封窖；否则霉变，牛群拒食",
+        "first_chapter": 3,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R5",
+        "text": "天然草场禁牧期内开垦为农田或苜蓿地须经草原征占用审核，未批属违法",
+        "first_chapter": 6,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R6",
+        "text": "塔布森年均降水380毫米、蒸发1800毫米；连续40天无雨即进入干旱等级管理",
+        "first_chapter": 2,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R7",
+        "text": "白灾期间母牛每天消耗体膘0.8至1.5公斤，断料30天以上成年母牛死亡率显著上升",
+        "first_chapter": 14,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R8",
+        "text": "干草含水率12至15%才能长期保存；高于20%必须打捆包膜或青贮",
+        "first_chapter": 5,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R9",
+        "text": "优质苜蓿干物质粗蛋白18%至22%，是奶牛产奶核心粗饲料，国产替代是行业方向",
+        "first_chapter": 4,
+        "immutable": false,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R10",
+        "text": "草场流转须经牧民代表大会三分之二同意并备案，未经同意的流转合同无效",
+        "first_chapter": 6,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R11",
+        "text": "巴音乌拉草场共56000亩，其中天然草场41000亩、人工苜蓿地15000亩",
+        "first_chapter": 1,
+        "immutable": true,
+        "allow_rewrite": true
+      },
+      {
+        "code": "R12",
+        "text": "塔布森距最近的200头以上奶牛场340公里，苜蓿须打捆外运，运费约占售价28%",
+        "first_chapter": 6,
+        "immutable": false,
+        "allow_rewrite": true
+      }
+    ],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {}
+  }
+}

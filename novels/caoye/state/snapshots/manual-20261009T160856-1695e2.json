@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 2,
+  "commit_id": "MAN-07325b1695e2",
+  "created_at": "2026-10-09T16:08:56",
+  "actor": "human",
+  "reason": "ch2新增伏笔F017由commit创建时未带title，此处补全标题",
+  "patch": {
+    "characters": {},
+    "character_changes": [],
+    "foreshadowing": {
+      "F017": {
+        "title": "抵押合同写的北边3000亩里约400亩压在天然草场边际线上、无草原征占用批文"
+      }
+    },
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}

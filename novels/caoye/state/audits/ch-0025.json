@@ -1,0 +1,332 @@
+{
+  "chapter": 25,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0025.md",
+  "sha256": "c41ab6b154c83ad18ca9648668fd2eda3461d633bcdacb22b4fe510f12d7e3f1",
+  "chars": 2718,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2718,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 118,
+      "avg_paragraph": 23.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0207,
+      "dialogue": 118
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：青贮料。\"苏牧说×4；贮料。\"苏牧说，×4；料。\"苏牧说，\"×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "青贮料。\"苏牧说",
+            "count": 4
+          },
+          {
+            "phrase": "贮料。\"苏牧说，",
+            "count": 4
+          },
+          {
+            "phrase": "料。\"苏牧说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"我爹",
+            "count": 4
+          },
+          {
+            "phrase": "爹在的时候，仓库",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"你爹在的时",
+            "count": 4
+          },
+          {
+            "phrase": "\"\"你爹在的时候",
+            "count": 4
+          },
+          {
+            "phrase": "\"你爹在的时候。",
+            "count": 4
+          },
+          {
+            "phrase": "你爹在的时候。\"",
+            "count": 4
+          },
+          {
+            "phrase": "冻毙了。我的错。",
+            "count": 4
+          },
+          {
+            "phrase": "黄猫。\"\"黄猫。",
+            "count": 4
+          },
+          {
+            "phrase": "猫。\"\"黄猫。\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"娜仁没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"娜仁没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "娜仁没有说话。\"",
+            "count": 3
+          },
+          {
+            "phrase": "咬开袋子，青贮料",
+            "count": 3
+          },
+          {
+            "phrase": "开袋子，青贮料漏",
+            "count": 3
+          },
+          {
+            "phrase": "袋子，青贮料漏出",
+            "count": 3
+          },
+          {
+            "phrase": "子，青贮料漏出来",
+            "count": 3
+          },
+          {
+            "phrase": "。牛吃了。冻毙了",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：青贮料。\"苏牧说×4；贮料。\"苏牧说，×4；料。\"苏牧说，\"×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "青贮料。\"苏牧说",
+          "count": 4
+        },
+        {
+          "phrase": "贮料。\"苏牧说，",
+          "count": 4
+        },
+        {
+          "phrase": "料。\"苏牧说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"我爹",
+          "count": 4
+        },
+        {
+          "phrase": "爹在的时候，仓库",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"你爹在的时",
+          "count": 4
+        },
+        {
+          "phrase": "\"\"你爹在的时候",
+          "count": 4
+        },
+        {
+          "phrase": "\"你爹在的时候。",
+          "count": 4
+        },
+        {
+          "phrase": "你爹在的时候。\"",
+          "count": 4
+        },
+        {
+          "phrase": "冻毙了。我的错。",
+          "count": 4
+        },
+        {
+          "phrase": "黄猫。\"\"黄猫。",
+          "count": 4
+        },
+        {
+          "phrase": "猫。\"\"黄猫。\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"娜仁没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"娜仁没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "娜仁没有说话。\"",
+          "count": 3
+        },
+        {
+          "phrase": "咬开袋子，青贮料",
+          "count": 3
+        },
+        {
+          "phrase": "开袋子，青贮料漏",
+          "count": 3
+        },
+        {
+          "phrase": "袋子，青贮料漏出",
+          "count": 3
+        },
+        {
+          "phrase": "子，青贮料漏出来",
+          "count": 3
+        },
+        {
+          "phrase": "。牛吃了。冻毙了",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 老板 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

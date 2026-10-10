@@ -1,0 +1,195 @@
+{
+  "chapter": 13,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0013.md",
+  "sha256": "3c83b1d2a15e8fdd2c6369f45ea53b49521bba9ff88f35f3b55af972a90ee48b",
+  "chars": 2530,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2530,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 101,
+      "avg_paragraph": 25.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0456,
+      "dialogue": 79
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"林晚说，\"老×5；\"林晚说，\"老周×5；。\"她说，\"你爹×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"林晚说，\"老",
+            "count": 5
+          },
+          {
+            "phrase": "\"林晚说，\"老周",
+            "count": 5
+          },
+          {
+            "phrase": "。\"她说，\"你爹",
+            "count": 4
+          },
+          {
+            "phrase": "。\"娜仁说。苏牧",
+            "count": 3
+          },
+          {
+            "phrase": "。\"林晚说，\"我",
+            "count": 3
+          },
+          {
+            "phrase": "的。\"苏牧说他爹",
+            "count": 3
+          },
+          {
+            "phrase": "砖。\"苏牧没有说",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧没有说话。",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"林晚说，\"老×5；\"林晚说，\"老周×5；。\"她说，\"你爹×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"林晚说，\"老",
+          "count": 5
+        },
+        {
+          "phrase": "\"林晚说，\"老周",
+          "count": 5
+        },
+        {
+          "phrase": "。\"她说，\"你爹",
+          "count": 4
+        },
+        {
+          "phrase": "。\"娜仁说。苏牧",
+          "count": 3
+        },
+        {
+          "phrase": "。\"林晚说，\"我",
+          "count": 3
+        },
+        {
+          "phrase": "的。\"苏牧说他爹",
+          "count": 3
+        },
+        {
+          "phrase": "砖。\"苏牧没有说",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧没有说话。",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

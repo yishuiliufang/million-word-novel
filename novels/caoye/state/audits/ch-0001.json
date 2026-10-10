@@ -1,0 +1,51 @@
+{
+  "chapter": 1,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0001.md",
+  "sha256": "5919a04eb98393e21f2d0d6a5d7eec0d271e5a665c3399e124b5ac315361be91",
+  "chars": 2689,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2689,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 86,
+      "avg_paragraph": 31.3,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "dialogue": 47
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 9月下旬至10月上旬，寒流抵达前",
+      "timeline_prev": "",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [],
+  "pass": true
+}

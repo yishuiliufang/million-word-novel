@@ -1,0 +1,606 @@
+{
+  "generated_at": "2026-10-07T15:31:49",
+  "python": "3.12.14",
+  "project": "C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n",
+  "chapters": 10,
+  "elapsed_seconds": 11.4,
+  "checks_total": 77,
+  "checks_passed": 77,
+  "checks_failed": 0,
+  "verdict": "PASS",
+  "schema": {
+    "tables": [
+      "arcs",
+      "audits",
+      "canon_changes",
+      "chapters",
+      "character_state_changes",
+      "character_states",
+      "entities",
+      "events",
+      "foreshadowings",
+      "gates",
+      "items",
+      "knowledge",
+      "meta",
+      "plans",
+      "plot_threads",
+      "relationships",
+      "round_runs",
+      "round_tasks",
+      "scene_index",
+      "snapshots",
+      "timeline",
+      "transactions",
+      "volumes",
+      "warnings",
+      "world_rules"
+    ],
+    "columns": 225,
+    "indexes": 35
+  },
+  "records": [
+    {
+      "kind": "syntax",
+      "name": "compileall scripts/",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "syntax",
+      "name": "脚本数量",
+      "ok": true,
+      "detail": "24 个 .py"
+    },
+    {
+      "kind": "command",
+      "name": "init",
+      "command": "python.exe scripts/novel_state.py init --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --title 验收小说 --premise 一句话故事 --target 12000 --chars-per-chapter 1200 --chapters-per-round 3 --volumes 2",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "\r\n  \"ok\": true,\r\n  \"root\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\",\r\n  \"estimated_chapters\": 10,\r\n  \"progress\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\progress.json\",\r\n  \"canon_db\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\canon.db\",\r\n  \"outline_volumes\": 2,\r\n  \"next_steps\": [\r\n    \"1) 把 state/bible.md 填成真设定（规则/人物/伏笔/线程），然后运行： python scripts/canon.py import-md --root \\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\"\",\r\n    \"2) 把 state/outline.md 每卷填上「卷末不可逆变化」\",\r\n    \"3) python scripts/novel_state.py next --root \\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\"\"\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "artifact",
+      "name": "目录与文件齐备",
+      "ok": true,
+      "detail": "canon.db + chapters/drafts/parts/state{s,snapshots,plans,audits,derived,tx}"
+    },
+    {
+      "kind": "command",
+      "name": "canon import-md",
+      "command": "python.exe scripts/canon.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n import-md",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"applied\": {\r\n    \"rules\": 1,\r\n    \"characters\": 8,\r\n    \"places\": 6,\r\n    \"foreshadow\": 1,\r\n    \"threads\": 1,\r\n    \"items\": 0,\r\n    \"aliases\": 0\r\n  },\r\n  \"patch\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\snapshots\\\\manual-20261007T153138-33f44c.json\",\r\n  \"sections\": {\r\n    \"rules\": 1,\r\n    \"characters\": 8,\r\n    \"places\": 6,\r\n    \"foreshadow\": 1,\r\n    \"threads\": 1\r\n  },\r\n  \"source_copy\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\bible.source.md\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "command",
+      "name": "canon show --json",
+      "command": "python.exe scripts/canon.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n show --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"root\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\",\r\n  \"chapters\": 0,\r\n  \"entities\": [\r\n    {\r\n      \"kind\": \"character\",\r\n      \"n\": 8\r\n    },\r\n    {\r\n      \"kind\": \"location\",\r\n      \"n\": 6\r\n    }\r\n  ],\r\n  \"events\": 0,\r\n  \"foreshadowing\": {\r\n    \"total\": 1,\r\n    \"open\": 1,\r\n    \"overdue\": [],\r\n    \"leaking\": []\r\n  },\r\n  \"threads\": {\r\n    \"planned\": \"T1\"\r\n  },\r\n  \"world_rules\": [\r\n    {\r\n      \"code\": \"R1\",\r\n      \"text\": \"账本上的数字会改变现实\",\r\n      \"immutable\": 1\r\n    }\r\n  ],\r\n  \"snapshots\": 1,\r\n  \"warnings_unresolved\": 0,\r\n  \"max_chapter\": 0\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "canon",
+      "name": "人物/规则/伏笔/线程已入库",
+      "ok": true,
+      "detail": "entities=[{'kind': 'character', 'n': 8}, {'kind': 'location', 'n': 6}] rules=1 foreshadowing={'total': 1, 'open': 1, 'overdue': [], 'leaking': []}"
+    },
+    {
+      "kind": "canon",
+      "name": "bible.md 已转为派生视图",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "canon",
+      "name": "手写原件已备份",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "next",
+      "command": "python.exe scripts/novel_state.py next --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "001.delta.json\\\"\",\r\n  \"commit_requires\": [\r\n    \"plan\",\r\n    \"audit(passing, same text hash)\",\r\n    \"canon delta valid\"\r\n  ],\r\n  \"recovery\": {\r\n    \"needs_recover\": false,\r\n    \"open_transactions\": [],\r\n    \"uncommitted_drafts\": [],\r\n    \"resume\": \"第 1 轮尚未收轮：运行 round-done\"\r\n  },\r\n  \"canon_db\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\canon.db\",\r\n  \"hard_rules\": [\r\n    \"只写 brief 里列出的章节，一章一个文件，写完立刻 commit，不要攒着一起提交。\",\r\n    \"**先 plan 再写**：本章没有通过校验的 chapter plan 时，commit 会拒绝。\",\r\n    \"**先 audit 再 commit**：commit 只接受针对当前草稿哈希的通过审计；改稿后必须重审。\",\r\n    \"Canon 只能通过校验过的 Canon Delta 写入：不要手改 state/bible.md 当作事实。\",\r\n    \"任何不确定的判断都不要写进 Canon，标 uncertain 让它变成 warning。\",\r\n    \"每章必须推进主线；禁止无冲突的过场章、禁止总结式收尾。\",\r\n    \"禁止复述前文摘要；上一章交代过的信息不许再解释一遍。\",\r\n    \"命中 banned-phrases.txt 的句子必须重写。\",\r\n    \"本轮结束时执行 round-done；若返回 ROUND_BLOCKED，先修复再收轮。\"\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "brief",
+      "name": "action=WRITE 且给出本轮章节",
+      "ok": true,
+      "detail": "[1, 2, 3]"
+    },
+    {
+      "kind": "brief",
+      "name": "四层记忆齐备",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "brief",
+      "name": "legacy 键保留",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "brief",
+      "name": "outline 参与 L2",
+      "ok": true,
+      "detail": "volume_goal='查清账本的来历'"
+    },
+    {
+      "kind": "command",
+      "name": "plan --check (chapter 1)",
+      "command": "python.exe scripts/novel_state.py plan --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1 --file C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\state\\plans\\ch-0001.plan.json --check",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"mode\": \"chapter\",\r\n  \"chapter\": 1,\r\n  \"plan_id\": \"PL-76d77d57d40f\",\r\n  \"plan_file\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\plans\\\\ch-0001.plan.json\",\r\n  \"errors\": [],\r\n  \"warnings\": [],\r\n  \"digest\": \"第1章计划：\\n- 目标：第1章：在黑塔推进主线并改变一次人物状态\\n- 核心冲突：对账时发现数目对不上下的对峙（第1章）\\n- 涉及人物：李禾、沈默\\n- 地点：黑塔\\n- 推进主线：T1｜支线：-\\n- 必须改变的状态：李禾.goal→第1章的目标\\n  · 第1场 @黑塔 冲突=对账时发现数目对不上\",\r\n  \"scenes\": 1,\r\n  \"next\": \"python scripts/novel_state.py scene-plan --root \\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\" --chapter 1\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "command",
+      "name": "commit 未审计 → 必须被拒 (exit 2)",
+      "command": "python.exe scripts/novel_state.py commit --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1 --file C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "ok": true,
+      "stdout_tail": "",
+      "stderr_tail": "audit 门）：没有针对当前文本（sha256=0846fde70516…）的审计记录。请运行：python scripts/novel_state.py audit --root \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\" --chapter 1 --file \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md\" --strict\r\n  修复后重试；如确需越过，请显式使用 --allow-audit（会写入 warning 并被 round-done 报告）\r\n"
+    },
+    {
+      "kind": "order",
+      "name": "未审计即提交被拒绝",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "order",
+      "name": "被拒的提交不留下章节文件",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "audit --strict",
+      "command": "python.exe scripts/novel_state.py audit --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1 --file C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md --json --strict",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "    \"mode\": \"no_ws\",\r\n      \"target_range\": [\r\n        960,\r\n        1500\r\n      ],\r\n      \"paragraphs\": 55,\r\n      \"avg_paragraph\": 22.7,\r\n      \"banned_hits\": 0,\r\n      \"repetition_threshold\": 3,\r\n      \"dialogue\": 14\r\n    },\r\n    \"blocking\": [],\r\n    \"advisories\": [],\r\n    \"pass\": true\r\n  },\r\n  \"level2\": {\r\n    \"level\": 2,\r\n    \"metrics\": {\r\n      \"timeline\": \"2077-03-01\",\r\n      \"timeline_prev\": \"\",\r\n      \"plan_diff\": {\r\n        \"missing_state_changes\": [],\r\n        \"mismatched_state_changes\": [],\r\n        \"untouched_threads\": [],\r\n        \"untouched_foreshadowing\": [],\r\n        \"ok\": true\r\n      }\r\n    },\r\n    \"blocking\": [],\r\n    \"advisories\": [],\r\n    \"pass\": true\r\n  },\r\n  \"blocking\": [],\r\n  \"advisories\": [],\r\n  \"pass\": true,\r\n  \"report_path\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\audits\\\\ch-0001.json\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "command",
+      "name": "审计后改稿 → 必须被拒 (exit 2)",
+      "command": "python.exe scripts/novel_state.py commit --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1 --file C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "ok": true,
+      "stdout_tail": "",
+      "stderr_tail": "audit 门）：没有针对当前文本（sha256=185cb798fae8…）的审计记录。请运行：python scripts/novel_state.py audit --root \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\" --chapter 1 --file \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md\" --strict\r\n  修复后重试；如确需越过，请显式使用 --allow-audit（会写入 warning 并被 round-done 报告）\r\n"
+    },
+    {
+      "kind": "order",
+      "name": "审计后改稿使审计失效",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "audit 重新执行",
+      "command": "python.exe scripts/novel_state.py audit --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1 --file C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\drafts\\ch-0001.md --json --strict",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "    \"mode\": \"no_ws\",\r\n      \"target_range\": [\r\n        960,\r\n        1500\r\n      ],\r\n      \"paragraphs\": 55,\r\n      \"avg_paragraph\": 22.7,\r\n      \"banned_hits\": 0,\r\n      \"repetition_threshold\": 3,\r\n      \"dialogue\": 14\r\n    },\r\n    \"blocking\": [],\r\n    \"advisories\": [],\r\n    \"pass\": true\r\n  },\r\n  \"level2\": {\r\n    \"level\": 2,\r\n    \"metrics\": {\r\n      \"timeline\": \"2077-03-01\",\r\n      \"timeline_prev\": \"\",\r\n      \"plan_diff\": {\r\n        \"missing_state_changes\": [],\r\n        \"mismatched_state_changes\": [],\r\n        \"untouched_threads\": [],\r\n        \"untouched_foreshadowing\": [],\r\n        \"ok\": true\r\n      }\r\n    },\r\n    \"blocking\": [],\r\n    \"advisories\": [],\r\n    \"pass\": true\r\n  },\r\n  \"blocking\": [],\r\n  \"advisories\": [],\r\n  \"pass\": true,\r\n  \"report_path\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\audits\\\\ch-0001.json\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "command",
+      "name": "commit (plan+audit 齐备)",
+      "command": "python.exe scripts/novel_state.py commit --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --chapter 1",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "\n  \"gates\": {\r\n    \"plan\": \"pass\",\r\n    \"audit\": \"pass\",\r\n    \"canon\": \"pass\",\r\n    \"length\": \"pass\"\r\n  },\r\n  \"waivers\": [],\r\n  \"delta_provider\": \"delta:ch-0001.delta.json\",\r\n  \"extraction_warnings\": 0,\r\n  \"canon\": {\r\n    \"entities_created\": 0,\r\n    \"events\": 1,\r\n    \"state_changes\": 1,\r\n    \"knowledge_added\": 0,\r\n    \"foreshadow_changes\": 0,\r\n    \"thread_changes\": 1\r\n  },\r\n  \"snapshot\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\snapshots\\\\ch-0001.json\",\r\n  \"draft_archived\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\drafts\\\\committed\\\\ch-0001.md\",\r\n  \"overdue_foreshadowing\": [],\r\n  \"total_chars\": 1248,\r\n  \"remaining_chars\": 10752,\r\n  \"percent\": 10.4,\r\n  \"complete\": false,\r\n  \"summary\": \"第1章事件：李禾与沈默在黑塔交锋 | 事件：第1章：李禾在黑塔完成一次交锋 | 状态：李禾.goal 查清账本的来历→第1章的目标\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "artifact",
+      "name": "章节文件 / 快照 / canon 行",
+      "ok": true,
+      "detail": "chapters/ch-0001.txt + snapshots/ch-0001.json"
+    },
+    {
+      "kind": "command",
+      "name": "auto-next --max-chapters 10",
+      "command": "python.exe scripts/novel_state.py auto-next --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --writer C:\\Users\\Administrator\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\tests\\fake_writer.py\" write --extractor C:\\Users\\Administrator\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe \"C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\tests\\fake_writer.py\" extract --max-chapters 10",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "owledge_added\": 0,\r\n    \"foreshadow_changes\": 0,\r\n    \"thread_changes\": 1\r\n  },\r\n  \"snapshot\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\snapshots\\\\ch-0010.json\",\r\n  \"draft_archived\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\drafts\\\\committed\\\\ch-0010.md\",\r\n  \"overdue_foreshadowing\": [\r\n    \"F001\"\r\n  ],\r\n  \"total_chars\": 12423,\r\n  \"remaining_chars\": 0,\r\n  \"percent\": 103.53,\r\n  \"complete\": true,\r\n  \"summary\": \"第10章事件：李禾与沈默在旧码头交锋 | 事件：第10章：李禾在旧码头完成一次交锋 | 状态：李禾.goal 第9章的目标→第10章的目标\"\r\n}\r\n{\"step\": \"commit\", \"chapter\": 10, \"exit\": 0}\r\n{\"step\": \"next\", \"action\": \"STOP\", \"round\": null, \"chapters\": null}\r\n{\"step\": \"done\", \"chapters\": 9, \"log\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\auto.log\"}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "e2e",
+      "name": "已提交章节数",
+      "ok": true,
+      "detail": "10 章：[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+    },
+    {
+      "kind": "e2e",
+      "name": "章节号连续",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "e2e",
+      "name": "每章都有 canon snapshot",
+      "ok": true,
+      "detail": "10 个快照"
+    },
+    {
+      "kind": "command",
+      "name": "validate_state --json",
+      "command": "python.exe scripts/validate_state.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"root\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\",\r\n  \"chapters\": 10,\r\n  \"ok\": true,\r\n  \"errors\": 0,\r\n  \"warnings\": 2,\r\n  \"infos\": 0,\r\n  \"by_code\": {\r\n    \"FORESHADOW_OVERDUE\": 1,\r\n    \"ROUND_OPEN_WITH_TASKS\": 1\r\n  },\r\n  \"findings\": [\r\n    {\r\n      \"code\": \"FORESHADOW_OVERDUE\",\r\n      \"message\": \"伏笔 F001 已逾期未回收（计划 3-5）\",\r\n      \"severity\": \"warning\",\r\n      \"entity\": \"F001\"\r\n    },\r\n    {\r\n      \"code\": \"ROUND_OPEN_WITH_TASKS\",\r\n      \"message\": \"第 4 轮仍处于 open 状态，未完成任务：（全部已完成，等待 round-done）\",\r\n      \"severity\": \"warning\",\r\n      \"round\": 4,\r\n      \"pending\": []\r\n    }\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "validate",
+      "name": "0 error",
+      "ok": true,
+      "detail": "errors=0 warnings=2"
+    },
+    {
+      "kind": "command",
+      "name": "canon verify-snapshots",
+      "command": "python.exe scripts/canon.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n verify-snapshots --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"chapters_replayed\": 10,\r\n  \"snapshots\": 11,\r\n  \"base_used\": null,\r\n  \"tables_compared\": 15,\r\n  \"differences\": []\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "snapshot",
+      "name": "PASS：快照日志完整重建 Canon",
+      "ok": true,
+      "detail": "回放 10 章 / 比较 15 张逻辑表"
+    },
+    {
+      "kind": "command",
+      "name": "canon schema --json",
+      "command": "python.exe scripts/canon.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n schema --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "\": null\r\n      },\r\n      {\r\n        \"name\": \"code\",\r\n        \"type\": \"TEXT\",\r\n        \"notnull\": 1,\r\n        \"pk\": 0,\r\n        \"default\": null\r\n      },\r\n      {\r\n        \"name\": \"text\",\r\n        \"type\": \"TEXT\",\r\n        \"notnull\": 1,\r\n        \"pk\": 0,\r\n        \"default\": null\r\n      },\r\n      {\r\n        \"name\": \"first_chapter\",\r\n        \"type\": \"INTEGER\",\r\n        \"notnull\": 0,\r\n        \"pk\": 0,\r\n        \"default\": null\r\n      },\r\n      {\r\n        \"name\": \"immutable\",\r\n        \"type\": \"INTEGER\",\r\n        \"notnull\": 1,\r\n        \"pk\": 0,\r\n        \"default\": \"1\"\r\n      },\r\n      {\r\n        \"name\": \"data\",\r\n        \"type\": \"TEXT\",\r\n        \"notnull\": 1,\r\n        \"pk\": 0,\r\n        \"default\": \"'{}'\"\r\n      }\r\n    ],\r\n    \"indexes\": [\r\n      {\r\n        \"name\": \"sqlite_autoindex_world_rules_1\",\r\n        \"unique\": true,\r\n        \"columns\": [\r\n          \"code\"\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n]\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表数量 ≥ 20",
+      "ok": true,
+      "detail": "25 张表 / 225 字段 / 35 索引"
+    },
+    {
+      "kind": "schema",
+      "name": "表 chapters 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 entities 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 character_states 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 events 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 foreshadowings 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 plot_threads 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 world_rules 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 knowledge 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 items 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 snapshots 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 plans 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 audits 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 gates 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 transactions 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 round_runs 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 canon_changes 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 warnings 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 scene_index 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "schema",
+      "name": "表 timeline 存在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "rollback --to-chapter 8",
+      "command": "python.exe scripts/novel_state.py rollback --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --to-chapter 8 --reason 验收：回滚测试",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "\": true,\r\n  \"to_chapter\": 8,\r\n  \"backup_db\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\snapshots\\\\pre-rollback-2026-10-07T153146.db\",\r\n  \"snapshots_applied\": 9,\r\n  \"base_used\": null,\r\n  \"snapshot_files_removed\": 2,\r\n  \"chapter_files_quarantined\": [\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\rolled-back\\\\ch-0009.txt\",\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\state\\\\rolled-back\\\\ch-0010.txt\"\r\n  ],\r\n  \"artifacts_quarantined\": 8,\r\n  \"derived\": {\r\n    \"derived\": 18,\r\n    \"notes\": [],\r\n    \"chapters_committed\": 8\r\n  },\r\n  \"next\": \"python scripts/novel_state.py status --root \\\"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\"\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "rollback",
+      "name": "被撤销章节已隔离而非删除",
+      "ok": true,
+      "detail": "隔离 2 个章节文件"
+    },
+    {
+      "kind": "command",
+      "name": "validate_state（回滚后）",
+      "command": "python.exe scripts/validate_state.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"root\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\",\r\n  \"chapters\": 8,\r\n  \"ok\": true,\r\n  \"errors\": 0,\r\n  \"warnings\": 1,\r\n  \"infos\": 0,\r\n  \"by_code\": {\r\n    \"ROUND_OPEN_WITH_TASKS\": 1\r\n  },\r\n  \"findings\": [\r\n    {\r\n      \"code\": \"ROUND_OPEN_WITH_TASKS\",\r\n      \"message\": \"第 4 轮仍处于 open 状态，未完成任务：[10]\",\r\n      \"severity\": \"warning\",\r\n      \"round\": 4,\r\n      \"pending\": [\r\n        10\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "rollback",
+      "name": "回滚后状态仍自洽",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "canon verify-snapshots（回滚后）",
+      "command": "python.exe scripts/canon.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n verify-snapshots --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"chapters_replayed\": 8,\r\n  \"snapshots\": 9,\r\n  \"base_used\": null,\r\n  \"tables_compared\": 15,\r\n  \"differences\": []\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "rollback",
+      "name": "回滚后快照仍可完整重建",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "round-done（存在未完成轮次）",
+      "command": "python.exe scripts/novel_state.py round-done --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": false,\r\n  \"verdict\": \"ROUND_BLOCKED\",\r\n  \"round_index\": 4,\r\n  \"round_complete\": false,\r\n  \"blockers\": [\r\n    \"本轮计划 1 章，实际提交 8 章；缺少 ch-0010\"\r\n  ],\r\n  \"notes\": [],\r\n  \"waivers\": [],\r\n  \"instruction\": \"修复上述问题后重新运行 round-done；如要放弃本轮，使用 --abandon --reason \\\"...\\\"\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "round",
+      "name": "返回 ROUND_BLOCKED 且退出码 3",
+      "ok": true,
+      "detail": "blockers=['本轮计划 1 章，实际提交 8 章；缺少 ch-0010']"
+    },
+    {
+      "kind": "round",
+      "name": "阻断时不递增 rounds_completed",
+      "ok": true,
+      "detail": "rounds_completed 3 → 3"
+    },
+    {
+      "kind": "command",
+      "name": "export_novel --by-volume --zip",
+      "command": "python.exe scripts/export_novel.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --by-volume --zip",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"chapters\": 8,\r\n  \"total_chars\": 9941,\r\n  \"export_dir\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\",\r\n  \"files\": [\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\\\\book.txt\",\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\\\\vol-1.txt\",\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\\\\vol-2.txt\",\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\\\\STATS.md\",\r\n    \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\\\\exports\\\\验收小说.zip\"\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "export",
+      "name": "导出文件存在",
+      "ok": true,
+      "detail": "章节 8 / 文件 5 个"
+    },
+    {
+      "kind": "command",
+      "name": "status --json",
+      "command": "python.exe scripts/novel_state.py status --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"title\": \"验收小说\",\r\n  \"root\": \"C:\\\\Users\\\\Administrator\\\\Downloads\\\\dsh\\\\million-word-novel-main\\\\.tmp-tests\\\\mwn-acceptance-22kabz9n\",\r\n  \"schema\": 2,\r\n  \"count_mode\": \"no_ws\",\r\n  \"target_chars\": 12000,\r\n  \"total_chars\": 9941,\r\n  \"remaining_chars\": 2059,\r\n  \"percent\": 82.84,\r\n  \"chapters_committed\": 8,\r\n  \"highest_chapter\": 8,\r\n  \"rounds_completed\": 3,\r\n  \"next_chapter\": 9,\r\n  \"estimated_rounds_left\": 1,\r\n  \"complete\": false,\r\n  \"current_volume\": 2,\r\n  \"volume_count\": 2,\r\n  \"chapters_per_round\": 3,\r\n  \"chars_per_chapter\": 1200,\r\n  \"chapter_gaps\": [],\r\n  \"progress_chapters_committed\": 8,\r\n  \"canon_db_present\": true,\r\n  \"canon\": {\r\n    \"characters\": 8,\r\n    \"events\": 8,\r\n    \"open_foreshadowing\": 1,\r\n    \"overdue_foreshadowing\": 0,\r\n    \"threads_open\": 1,\r\n    \"snapshots\": 9\r\n  },\r\n  \"open_round\": null\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "legacy",
+      "name": "status 旧键齐全",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "count_words --per-chapter",
+      "command": "python.exe scripts/count_words.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --per-chapter --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"mode\": \"no_ws\",\r\n  \"target_chars\": 12000,\r\n  \"total_chars\": 9941,\r\n  \"remaining\": 2059,\r\n  \"percent\": 82.84,\r\n  \"chapters\": 8,\r\n  \"complete\": false,\r\n  \"per_chapter\": [\r\n    {\r\n      \"chapter\": 1,\r\n      \"chars\": 1248\r\n    },\r\n    {\r\n      \"chapter\": 2,\r\n      \"chars\": 1239\r\n    },\r\n    {\r\n      \"chapter\": 3,\r\n      \"chars\": 1239\r\n    },\r\n    {\r\n      \"chapter\": 4,\r\n      \"chars\": 1239\r\n    },\r\n    {\r\n      \"chapter\": 5,\r\n      \"chars\": 1248\r\n    },\r\n    {\r\n      \"chapter\": 6,\r\n      \"chars\": 1244\r\n    },\r\n    {\r\n      \"chapter\": 7,\r\n      \"chars\": 1242\r\n    },\r\n    {\r\n      \"chapter\": 8,\r\n      \"chars\": 1242\r\n    }\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "legacy",
+      "name": "三种字数口径仍在",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "plan --volume-plan（旧模式）",
+      "command": "python.exe scripts/novel_state.py plan --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --volume-plan 10,10 --chars-per-chapter 1500",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"mode\": \"structure\",\r\n  \"volumes\": [\r\n    {\r\n      \"volume\": 1,\r\n      \"start_chapter\": 1,\r\n      \"end_chapter\": 10,\r\n      \"chapters\": 10\r\n    },\r\n    {\r\n      \"volume\": 2,\r\n      \"start_chapter\": 11,\r\n      \"end_chapter\": 20,\r\n      \"chapters\": 10\r\n    }\r\n  ],\r\n  \"chars_per_chapter\": 1500,\r\n  \"chapters_per_round\": 3,\r\n  \"target_chars\": 12000\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "legacy",
+      "name": "plan 旧模式仍可用",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "kind": "command",
+      "name": "import --group（承接旧稿）",
+      "command": "python.exe scripts/novel_state.py import --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --group C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n\\manuscript\\old*.txt --start-chapter 9",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "{\r\n  \"ok\": true,\r\n  \"imported\": 2,\r\n  \"first\": 9,\r\n  \"last\": 10,\r\n  \"imported_chars\": 2314,\r\n  \"total_chars\": 12255,\r\n  \"remaining_chars\": 0,\r\n  \"next_chapter\": 11,\r\n  \"complete\": true,\r\n  \"note\": \"导入章节绕过字数门（旧稿长度是历史事实），但没有 Canon 提取；运行 extract --chapter N 补齐。\"\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "command",
+      "name": "validate_state（导入后）",
+      "command": "python.exe scripts/validate_state.py --root C:\\Users\\Administrator\\Downloads\\dsh\\million-word-novel-main\\.tmp-tests\\mwn-acceptance-22kabz9n --json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "sage\": \"ch-0009 没有 chapter plan\",\r\n      \"severity\": \"warning\",\r\n      \"chapter\": 9\r\n    },\r\n    {\r\n      \"code\": \"GATE_NOT_PASSED\",\r\n      \"message\": \"ch-0009 的 plan 门状态为 missing\",\r\n      \"severity\": \"warning\",\r\n      \"chapter\": 9,\r\n      \"gate\": \"plan\"\r\n    },\r\n    {\r\n      \"code\": \"IMPORTED_CHAPTER\",\r\n      \"message\": \"ch-0010 为导入章节，没有原生审计记录（如需门禁请运行 extract/audit）\",\r\n      \"severity\": \"info\",\r\n      \"chapter\": 10\r\n    },\r\n    {\r\n      \"code\": \"PLAN_MISSING\",\r\n      \"message\": \"ch-0010 没有 chapter plan\",\r\n      \"severity\": \"warning\",\r\n      \"chapter\": 10\r\n    },\r\n    {\r\n      \"code\": \"GATE_NOT_PASSED\",\r\n      \"message\": \"ch-0010 的 plan 门状态为 missing\",\r\n      \"severity\": \"warning\",\r\n      \"chapter\": 10,\r\n      \"gate\": \"plan\"\r\n    },\r\n    {\r\n      \"code\": \"FORESHADOW_OVERDUE\",\r\n      \"message\": \"伏笔 F001 已逾期未回收（计划 3-5）\",\r\n      \"severity\": \"warning\",\r\n      \"entity\": \"F001\"\r\n    }\r\n  ]\r\n}\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "legacy",
+      "name": "导入章节不破坏状态校验",
+      "ok": true,
+      "detail": "errors=0"
+    },
+    {
+      "kind": "command",
+      "name": "docs/CLI 一致性检查",
+      "command": "python.exe tests/check_docs_cli.py",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "ok": true,
+      "stdout_tail": "已核对子命令 16 个：audit auto-next commit extract import init migrate next part plan recover rollback round-done scene-plan status validate\r\n已核对脚本 23 个：audit_quality autodiversify canon canon_db chapter_plan character_state check_seams context_builder count_words derived export_novel extract fix_quotes foreshadow llm narrative_audit novel_state polish_prose scan_beats scan_tags strip_beats tx validate_state\r\n子命令总数（parser）：16\r\nPASS：文档中出现的每个命令与脚本都真实存在\r\n",
+      "stderr_tail": ""
+    },
+    {
+      "kind": "docs",
+      "name": "文档中的命令/脚本全部存在",
+      "ok": true,
+      "detail": "PASS：文档中出现的每个命令与脚本都真实存在"
+    },
+    {
+      "kind": "docs",
+      "name": "docs/DDL.sql 与 scripts/schema.sql 一致",
+      "ok": true,
+      "detail": "13817 vs 13817 字节"
+    },
+    {
+      "kind": "tests",
+      "name": "全部用例通过",
+      "ok": true,
+      "detail": "172/172 通过，跳过 0"
+    }
+  ]
+}

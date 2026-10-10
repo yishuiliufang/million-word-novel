@@ -1,0 +1,296 @@
+{
+  "chapter": 26,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0026.md",
+  "sha256": "04231767351bb33b9d8da1e0406d6a7b25db37a8a8bc94b4289d34c68814a1b8",
+  "chars": 2557,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2557,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 102,
+      "avg_paragraph": 25.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.022,
+      "dialogue": 91
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。后来，狼没了。×4；守草原。狼回来了×4；牛。狼来了，我防×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。后来，狼没了。",
+            "count": 4
+          },
+          {
+            "phrase": "守草原。狼回来了",
+            "count": 4
+          },
+          {
+            "phrase": "牛。狼来了，我防",
+            "count": 4
+          },
+          {
+            "phrase": "。\"娜仁没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"娜仁没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "狼来了，说明草原",
+            "count": 3
+          },
+          {
+            "phrase": "来了，说明草原还",
+            "count": 3
+          },
+          {
+            "phrase": "了，说明草原还好",
+            "count": 3
+          },
+          {
+            "phrase": "，说明草原还好。",
+            "count": 3
+          },
+          {
+            "phrase": "。如今狼来了。\"",
+            "count": 3
+          },
+          {
+            "phrase": "。\"\"狼来了。\"",
+            "count": 3
+          },
+          {
+            "phrase": "。现在，狼来了。",
+            "count": 3
+          },
+          {
+            "phrase": "后来，狼没了。如",
+            "count": 3
+          },
+          {
+            "phrase": "来，狼没了。如今",
+            "count": 3
+          },
+          {
+            "phrase": "，狼没了。如今狼",
+            "count": 3
+          },
+          {
+            "phrase": "狼没了。如今狼回",
+            "count": 3
+          },
+          {
+            "phrase": "没了。如今狼回来",
+            "count": 3
+          },
+          {
+            "phrase": "了。如今狼回来了",
+            "count": 3
+          },
+          {
+            "phrase": "。如今狼回来了。",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧没有说话",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。后来，狼没了。×4；守草原。狼回来了×4；牛。狼来了，我防×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。后来，狼没了。",
+          "count": 4
+        },
+        {
+          "phrase": "守草原。狼回来了",
+          "count": 4
+        },
+        {
+          "phrase": "牛。狼来了，我防",
+          "count": 4
+        },
+        {
+          "phrase": "。\"娜仁没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"娜仁没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "狼来了，说明草原",
+          "count": 3
+        },
+        {
+          "phrase": "来了，说明草原还",
+          "count": 3
+        },
+        {
+          "phrase": "了，说明草原还好",
+          "count": 3
+        },
+        {
+          "phrase": "，说明草原还好。",
+          "count": 3
+        },
+        {
+          "phrase": "。如今狼来了。\"",
+          "count": 3
+        },
+        {
+          "phrase": "。\"\"狼来了。\"",
+          "count": 3
+        },
+        {
+          "phrase": "。现在，狼来了。",
+          "count": 3
+        },
+        {
+          "phrase": "后来，狼没了。如",
+          "count": 3
+        },
+        {
+          "phrase": "来，狼没了。如今",
+          "count": 3
+        },
+        {
+          "phrase": "，狼没了。如今狼",
+          "count": 3
+        },
+        {
+          "phrase": "狼没了。如今狼回",
+          "count": 3
+        },
+        {
+          "phrase": "没了。如今狼回来",
+          "count": 3
+        },
+        {
+          "phrase": "了。如今狼回来了",
+          "count": 3
+        },
+        {
+          "phrase": "。如今狼回来了。",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧没有说话",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 我祖父 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,700 @@
+{
+  "generated_at": "2026-10-07T15:31:36",
+  "python": "3.12.14",
+  "total": 172,
+  "passed": 172,
+  "failed": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "elapsed_seconds": 82.1,
+  "tests": [
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_chapter_mismatch_is_an_error",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_illegal_foreshadow_status_is_an_error",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_inverted_payoff_window_is_an_error",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_missing_required_field_is_an_error",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_ok_false_flag_from_ledger_window",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_timeline_regression_is_an_error",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_uncertain_items_never_reach_canon",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_unknown_named_speakers_are_warned_not_errored",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.DeltaValidationTest.test_valid_delta_passes",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_banned_phrase_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_extreme_repetition_still_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_ngram_repetition_is_advisory_not_a_verdict",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_no_dialogue_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_overlong_paragraph_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_prev_chapter_overlap_is_advisory",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level1Test.test_short_chapter_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_dangling_cause_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_dead_character_cannot_act",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_forbidden_reveal_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_illegal_foreshadow_transition_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_knowledge_boundary_flags_secret_nobody_knows",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_planned_state_change_divergence_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_planned_state_change_missing_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_semantic_plot_repetition_is_reported",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_timeline_regression_blocks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.Level2Test.test_unknown_speaker_is_reported",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.LlmBoundaryTest.test_json_block_survives_fences_and_chatter",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.LlmBoundaryTest.test_missing_file_provider_raises",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.LlmBoundaryTest.test_rule_provider_has_no_model",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.LlmBoundaryTest.test_truncated_json_raises",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_human_summary_is_derived_from_the_delta",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_missing_timeline_is_a_warning",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_plan_state_source_opts_in_with_a_warning",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_plot_repetition_detector",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_rule_extraction_never_invents_state_changes_by_default",
+      "status": "PASS"
+    },
+    {
+      "test": "test_audit_and_extract.RuleExtractorTest.test_rule_extraction_records_present_entities",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.EntityAndStateTest.test_change_log_records_actor_and_reason",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.EntityAndStateTest.test_character_state_transition_is_logged_before_and_after",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.EntityAndStateTest.test_none_after_never_rewrites_canon_and_records_warning",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.EntityAndStateTest.test_unknown_field_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.RollbackTest.test_manual_canon_update_survives_rollback_and_is_replayable",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.RollbackTest.test_project_is_consistent_after_rollback",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.RollbackTest.test_rollback_by_chapter_keeps_previous",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.RollbackTest.test_rollback_restores_canon_and_quarantines_later_chapters",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SchemaTest.test_ddl_file_is_the_source_of_the_schema",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SchemaTest.test_json_columns_round_trip",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SchemaTest.test_required_tables_and_indexes_exist",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SnapshotTest.test_chapter_hash_matches_file",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SnapshotTest.test_compare_two_snapshots",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SnapshotTest.test_every_commit_produces_a_snapshot_file_and_row",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SnapshotTest.test_replay_reproduces_live_canon_exactly",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.SnapshotTest.test_snapshot_before_after_is_a_real_diff",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.TransactionTest.test_interrupted_prepare_is_discarded",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.TransactionTest.test_interrupted_publish_is_completed_by_recover",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.TransactionTest.test_pending_work_reports_uncommitted_draft",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.TransactionTest.test_recover_is_idempotent",
+      "status": "PASS"
+    },
+    {
+      "test": "test_core_infrastructure.TransactionTest.test_successful_commit_leaves_no_journal",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRollbackTest.test_1_project_copy_is_intact",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRollbackTest.test_2_rollback_to_six_leaves_a_consistent_project",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRollbackTest.test_3_rollback_can_be_undone_and_the_quarantine_is_kept",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRollbackTest.test_4_export_after_rollback_contains_six_chapters",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_causality_chain_links_each_chapter_to_the_previous_one",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_character_state_is_tracked_chapter_by_chapter",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_derived_views_describe_all_ten_chapters",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_every_chapter_passed_the_gates_at_commit_time",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_foreshadowing_went_through_its_whole_lifecycle",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_knowledge_boundary_is_recorded",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_next_reports_round_done_then_stop",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_ten_chapters_exist_as_files_rows_and_snapshots",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_timeline_is_monotonic_across_all_chapters",
+      "status": "PASS"
+    },
+    {
+      "test": "test_integration_10_chapters.TenChapterRunTest.test_validation_passes_and_snapshots_replay_exactly",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.AuxiliaryScriptsTest.test_check_seams_clean_when_no_overlap",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.AuxiliaryScriptsTest.test_check_seams_detects_a_duplicated_seam",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.AuxiliaryScriptsTest.test_scan_beats_and_strip_beats_read_utf8",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.AuxiliaryScriptsTest.test_scan_tags_reports_declarative_questions",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_cli_usage_document_covers_the_required_commands",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_docs_state_the_canonical_truth_order_and_no_audit_after_commit",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_every_documented_novel_state_command_exists",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_every_documented_script_exists",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_fix_quotes_is_documented_as_report_only_with_apply",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.DocsConsistencyTest.test_skill_md_has_no_corrupted_table_rows",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.FixQuotesContractTest.test_apply_repairs_and_exits_zero",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.FixQuotesContractTest.test_default_is_report_only_and_exits_one",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.FixQuotesContractTest.test_json_report_declares_the_mode",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.FixQuotesContractTest.test_report_only_alias_also_writes_nothing",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_all_legacy_subcommands_still_exist",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_audit_quality_legacy_cli_and_json_shape",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_audit_quality_strict_exit_codes",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_export_zip_contains_chapters_state_and_canon",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_import_adopts_existing_prose",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_init_creates_the_legacy_layout_and_the_canon_db",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_part_refuses_an_already_committed_chapter",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_part_workflow_appends_and_checks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_plan_volume_plan_mode_is_unchanged",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_status_json_keeps_legacy_keys",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.LegacyCliSurfaceTest.test_three_count_modes_still_work",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.MigrateTest.test_migrate_upgrades_without_losing_anything",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.PolishCanonSafetyTest.test_allow_canon_edits_applies_and_writes_a_report",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.PolishCanonSafetyTest.test_canon_affecting_passes_are_refused_by_default",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.PolishCanonSafetyTest.test_safe_passes_still_run_by_default",
+      "status": "PASS"
+    },
+    {
+      "test": "test_legacy_compat.PolishCanonSafetyTest.test_strict_canon_turns_detection_into_a_failure",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_all_four_layers_are_present",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_bible_digest_is_no_longer_a_truncated_file_read",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_derived_views_change_when_canon_changes",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_digest_names_the_volume_goal_and_character_state",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_digest_stays_the_same_size_as_the_book_grows",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_entity_resolution_prefers_the_plan",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_layer0_carries_task_conflict_and_previous_tail",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_layer1_is_a_query_not_a_text_tail",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_layer2_makes_outline_a_first_class_input",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_layer3_returns_only_the_entities_in_scope",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_leak_risk_is_detected_from_pending_secret_keywords",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_ledger_and_summaries_are_derived_from_canon",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_next_brief_contains_the_layers_and_the_plan_commands",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_next_keeps_the_legacy_keys_for_old_consumers",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_overdue_foreshadowing_is_flagged_when_past_the_window",
+      "status": "PASS"
+    },
+    {
+      "test": "test_memory_context.ContextTest.test_relevant_foreshadowing_is_scored_with_reasons",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_events_carry_causality",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_items_track_custody",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_knowledge_is_recorded_and_queryable",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_relationships_are_queryable_from_both_sides",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_scene_index_supports_semantic_repetition_checks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_timeline_is_recorded_per_chapter",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CanonStateTest.test_world_rule_immutability_blocks_silent_rewrite",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_irreversible_status_needs_an_explicit_revival",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_knows_and_grant",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_list_fields_merge_instead_of_replacing",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_missing_after_is_never_applied",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_transition_applies_and_diffs",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_unknown_field_is_rejected_with_a_warning",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_validate_against_canon_flags_unknown_location",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.CharacterStateMachineTest.test_validate_reports_shape_problems",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_actions_drive_the_state",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_detect_leaks_before_the_reveal_window",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_illegal_transition_is_rejected_by_plan_helper",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_legal_and_illegal_transitions",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_overdue_after_the_window_plus_grace",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_relevance_explains_itself",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_resolved_is_never_overdue_or_open",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_select_relevant_orders_by_score_and_marks_overdue",
+      "status": "PASS"
+    },
+    {
+      "test": "test_state_machines.ForeshadowLifecycleTest.test_window_phase",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.AutoNextTest.test_auto_next_runs_the_whole_pipeline",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.AutoNextTest.test_auto_next_without_a_writer_explains_the_contract",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_audit_after_a_text_change_no_longer_authorises_the_commit",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_commit_refuses_an_invalid_canon_delta",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_commit_runs_plan_write_audit_canon_in_order",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_commit_without_a_plan_is_refused",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_commit_without_an_audit_is_refused",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_length_gate_still_blocks_and_records_a_waiver",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.GateTest.test_waivers_are_explicit_and_reported",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RecoveryTest.test_detect_half_open_transaction_in_validation",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RecoveryTest.test_next_reports_and_clears_pending_work",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RecoveryTest.test_recover_command_reports_clean_state",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RecoveryTest.test_recover_completes_an_interrupted_commit",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_abandon_requires_a_reason",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_blocks_on_an_unhandled_draft",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_blocks_when_a_chapter_has_no_audit",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_blocks_when_planned_chapters_are_missing",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_can_abandon_a_round_with_a_reason",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.RoundDoneTest.test_round_done_succeeds_and_advances_after_a_legal_round",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_clean_project_validates",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_cli_exit_code_is_one_on_errors",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_a_chapter_file_modified_after_commit",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_a_missing_snapshot",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_chapter_gap",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_dangling_event_participant",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_foreshadow_window_problems",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_illegal_thread_status",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_open_round_with_unfinished_tasks",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_overdue_foreshadowing",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_relationship_to_a_non_character",
+      "status": "PASS"
+    },
+    {
+      "test": "test_workflow.ValidationTest.test_detects_timeline_regression",
+      "status": "PASS"
+    }
+  ]
+}

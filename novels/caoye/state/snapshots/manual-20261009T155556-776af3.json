@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 1,
+  "commit_id": "MAN-bb1c72776af3",
+  "created_at": "2026-10-09T15:55:56",
+  "actor": "human",
+  "reason": "修正ch1：knowledge需为数组",
+  "patch": {
+    "characters": {
+      "苏牧": {
+        "knowledge": [
+          "父亲把苜蓿割晚了十一天，最晚应在九月底割",
+          "北边苜蓿地是去年五月从天然草场开垦的",
+          "118头母牛冬歇期需干草约100吨，差三成约30吨",
+          "牛场有一本父亲放在旧库房里的账本",
+          "棚里有一箱无品种名苜蓿种子，汇款单汇款人栏空白",
+          "九年前冬天苏家死牛九十七头"
+        ]
+      }
+    },
+    "character_changes": [],
+    "foreshadowing": {},
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}

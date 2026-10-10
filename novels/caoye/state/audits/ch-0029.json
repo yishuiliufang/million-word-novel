@@ -1,0 +1,284 @@
+{
+  "chapter": 29,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0029.md",
+  "sha256": "336677cce55812e247abec2fbd60944457b4529956076586e00089ab78f2264c",
+  "chars": 2534,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2534,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 114,
+      "avg_paragraph": 22.2,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0479,
+      "dialogue": 143
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"他说，\"我认×5；\"他说，\"我认。×5；我欠你爹一条命。×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"他说，\"我认",
+            "count": 5
+          },
+          {
+            "phrase": "\"他说，\"我认。",
+            "count": 5
+          },
+          {
+            "phrase": "我欠你爹一条命。",
+            "count": 5
+          },
+          {
+            "phrase": "算账。\"\"算账。",
+            "count": 4
+          },
+          {
+            "phrase": "账。\"\"算账。\"",
+            "count": 4
+          },
+          {
+            "phrase": "算账。\"他说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"你找",
+            "count": 4
+          },
+          {
+            "phrase": "\"他说，\"你找林",
+            "count": 4
+          },
+          {
+            "phrase": "他说，\"你找林晚",
+            "count": 4
+          },
+          {
+            "phrase": "找林晚，发稿子。",
+            "count": 4
+          },
+          {
+            "phrase": "爹的事，是真的。",
+            "count": 4
+          },
+          {
+            "phrase": "。我欠你爹一条命",
+            "count": 4
+          },
+          {
+            "phrase": "两万亩，被查了。",
+            "count": 4
+          },
+          {
+            "phrase": "还回去。\"\"还回",
+            "count": 4
+          },
+          {
+            "phrase": "回去。\"\"还回去",
+            "count": 4
+          },
+          {
+            "phrase": "去。\"\"还回去。",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"还回去。\"",
+            "count": 4
+          },
+          {
+            "phrase": "还回去。\"苏牧说",
+            "count": 4
+          },
+          {
+            "phrase": "地还回去，草还在",
+            "count": 4
+          },
+          {
+            "phrase": "还回去，草还在，",
+            "count": 4
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"他说，\"我认×5；\"他说，\"我认。×5；我欠你爹一条命。×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"他说，\"我认",
+          "count": 5
+        },
+        {
+          "phrase": "\"他说，\"我认。",
+          "count": 5
+        },
+        {
+          "phrase": "我欠你爹一条命。",
+          "count": 5
+        },
+        {
+          "phrase": "算账。\"\"算账。",
+          "count": 4
+        },
+        {
+          "phrase": "账。\"\"算账。\"",
+          "count": 4
+        },
+        {
+          "phrase": "算账。\"他说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"你找",
+          "count": 4
+        },
+        {
+          "phrase": "\"他说，\"你找林",
+          "count": 4
+        },
+        {
+          "phrase": "他说，\"你找林晚",
+          "count": 4
+        },
+        {
+          "phrase": "找林晚，发稿子。",
+          "count": 4
+        },
+        {
+          "phrase": "爹的事，是真的。",
+          "count": 4
+        },
+        {
+          "phrase": "。我欠你爹一条命",
+          "count": 4
+        },
+        {
+          "phrase": "两万亩，被查了。",
+          "count": 4
+        },
+        {
+          "phrase": "还回去。\"\"还回",
+          "count": 4
+        },
+        {
+          "phrase": "回去。\"\"还回去",
+          "count": 4
+        },
+        {
+          "phrase": "去。\"\"还回去。",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"还回去。\"",
+          "count": 4
+        },
+        {
+          "phrase": "还回去。\"苏牧说",
+          "count": 4
+        },
+        {
+          "phrase": "地还回去，草还在",
+          "count": 4
+        },
+        {
+          "phrase": "还回去，草还在，",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,368 @@
+{
+  "chapter": 30,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0030.md",
+  "sha256": "16aa9576fa90c70bbda369732fc731ae794fe078aea41bdeda4feb82bda57b38",
+  "chars": 2792,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2792,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 119,
+      "avg_paragraph": 23.5,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0528,
+      "dialogue": 147
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：了。\"他说，\"我×5；远山草业被查了。×5；不可撤销。你的地×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "了。\"他说，\"我",
+            "count": 5
+          },
+          {
+            "phrase": "远山草业被查了。",
+            "count": 5
+          },
+          {
+            "phrase": "不可撤销。你的地",
+            "count": 5
+          },
+          {
+            "phrase": "可撤销。你的地，",
+            "count": 5
+          },
+          {
+            "phrase": "。\"他道，\"你的",
+            "count": 4
+          },
+          {
+            "phrase": "我的事，怎么讨。",
+            "count": 4
+          },
+          {
+            "phrase": "的事。\"他说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"我的",
+            "count": 4
+          },
+          {
+            "phrase": "不可撤销。\"\"不",
+            "count": 4
+          },
+          {
+            "phrase": "可撤销。\"\"不可",
+            "count": 4
+          },
+          {
+            "phrase": "撤销。\"\"不可撤",
+            "count": 4
+          },
+          {
+            "phrase": "销。\"\"不可撤销",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"不可撤销。",
+            "count": 4
+          },
+          {
+            "phrase": "\"\"不可撤销。\"",
+            "count": 4
+          },
+          {
+            "phrase": "\"不可撤销。\"他",
+            "count": 4
+          },
+          {
+            "phrase": "。\"他说，\"你讨",
+            "count": 4
+          },
+          {
+            "phrase": "\"他说，\"你讨回",
+            "count": 4
+          },
+          {
+            "phrase": "他说，\"你讨回来",
+            "count": 4
+          },
+          {
+            "phrase": "说，\"你讨回来了",
+            "count": 4
+          },
+          {
+            "phrase": "，\"你讨回来了。",
+            "count": 4
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他叹 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他叹 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他低声 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 他低声 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：了。\"他说，\"我×5；远山草业被查了。×5；不可撤销。你的地×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "了。\"他说，\"我",
+          "count": 5
+        },
+        {
+          "phrase": "远山草业被查了。",
+          "count": 5
+        },
+        {
+          "phrase": "不可撤销。你的地",
+          "count": 5
+        },
+        {
+          "phrase": "可撤销。你的地，",
+          "count": 5
+        },
+        {
+          "phrase": "。\"他道，\"你的",
+          "count": 4
+        },
+        {
+          "phrase": "我的事，怎么讨。",
+          "count": 4
+        },
+        {
+          "phrase": "的事。\"他说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"我的",
+          "count": 4
+        },
+        {
+          "phrase": "不可撤销。\"\"不",
+          "count": 4
+        },
+        {
+          "phrase": "可撤销。\"\"不可",
+          "count": 4
+        },
+        {
+          "phrase": "撤销。\"\"不可撤",
+          "count": 4
+        },
+        {
+          "phrase": "销。\"\"不可撤销",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"不可撤销。",
+          "count": 4
+        },
+        {
+          "phrase": "\"\"不可撤销。\"",
+          "count": 4
+        },
+        {
+          "phrase": "\"不可撤销。\"他",
+          "count": 4
+        },
+        {
+          "phrase": "。\"他说，\"你讨",
+          "count": 4
+        },
+        {
+          "phrase": "\"他说，\"你讨回",
+          "count": 4
+        },
+        {
+          "phrase": "他说，\"你讨回来",
+          "count": 4
+        },
+        {
+          "phrase": "说，\"你讨回来了",
+          "count": 4
+        },
+        {
+          "phrase": "，\"你讨回来了。",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他叹 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他叹 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他低声 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他又 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 他低声 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

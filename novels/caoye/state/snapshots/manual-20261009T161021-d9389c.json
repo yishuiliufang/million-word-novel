@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 2,
+  "commit_id": "MAN-01c95dd9389c",
+  "created_at": "2026-10-09T16:10:21",
+  "actor": "human",
+  "reason": "去除括号说明，使位置与Canon地点表一致，消除UNKNOWN_LOCATION_REF告警",
+  "patch": {
+    "characters": {
+      "苏牧": {
+        "location": "巴音乌拉草场"
+      }
+    },
+    "character_changes": [],
+    "foreshadowing": {},
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}

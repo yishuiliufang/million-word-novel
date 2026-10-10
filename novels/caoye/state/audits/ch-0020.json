@@ -1,0 +1,284 @@
+{
+  "chapter": 20,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0020.md",
+  "sha256": "013763ca5be152fcbaa63c6d273b37afa01de3175361f1da4c8187b0dba57925",
+  "chars": 2479,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2479,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 115,
+      "avg_paragraph": 21.6,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0413,
+      "dialogue": 101
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"苏牧说。娜仁×4；。\"苏牧说，\"爹×4；。\"苏牧说，\"老×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"苏牧说。娜仁",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧说，\"爹",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧说，\"老",
+            "count": 4
+          },
+          {
+            "phrase": "\"苏牧说，\"老周",
+            "count": 4
+          },
+          {
+            "phrase": "2025年4月5",
+            "count": 4
+          },
+          {
+            "phrase": "025年4月5日",
+            "count": 4
+          },
+          {
+            "phrase": "。\"娜仁看着苏牧",
+            "count": 4
+          },
+          {
+            "phrase": "\"娜仁看着苏牧。",
+            "count": 4
+          },
+          {
+            "phrase": "。\"她说，\"你爹",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "打开一条。202",
+            "count": 3
+          },
+          {
+            "phrase": "。\"娜仁没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"娜仁没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "娜仁没有说话。\"",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧看着那条",
+            "count": 3
+          },
+          {
+            "phrase": "娜仁看着苏牧。\"",
+            "count": 3
+          },
+          {
+            "phrase": "的话，你替他发了",
+            "count": 3
+          },
+          {
+            "phrase": "话，你替他发了。",
+            "count": 3
+          },
+          {
+            "phrase": "棚外的风，刮过草",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"苏牧说。娜仁×4；。\"苏牧说，\"爹×4；。\"苏牧说，\"老×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"苏牧说。娜仁",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧说，\"爹",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧说，\"老",
+          "count": 4
+        },
+        {
+          "phrase": "\"苏牧说，\"老周",
+          "count": 4
+        },
+        {
+          "phrase": "2025年4月5",
+          "count": 4
+        },
+        {
+          "phrase": "025年4月5日",
+          "count": 4
+        },
+        {
+          "phrase": "。\"娜仁看着苏牧",
+          "count": 4
+        },
+        {
+          "phrase": "\"娜仁看着苏牧。",
+          "count": 4
+        },
+        {
+          "phrase": "。\"她说，\"你爹",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "打开一条。202",
+          "count": 3
+        },
+        {
+          "phrase": "。\"娜仁没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"娜仁没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "娜仁没有说话。\"",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧看着那条",
+          "count": 3
+        },
+        {
+          "phrase": "娜仁看着苏牧。\"",
+          "count": 3
+        },
+        {
+          "phrase": "的话，你替他发了",
+          "count": 3
+        },
+        {
+          "phrase": "话，你替他发了。",
+          "count": 3
+        },
+        {
+          "phrase": "棚外的风，刮过草",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

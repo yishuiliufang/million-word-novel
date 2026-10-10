@@ -1,0 +1,255 @@
+{
+  "chapter": 12,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0012.md",
+  "sha256": "d6ad5c398ac669eb4772390824b18b1f39372934f65e40679e6a257f82bf6fe9",
+  "chars": 2616,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2616,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 117,
+      "avg_paragraph": 22.4,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0387,
+      "dialogue": 66
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：风从沙丘线那边刮×3；从沙丘线那边刮过×3；沙丘线那边刮过来×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "风从沙丘线那边刮",
+            "count": 3
+          },
+          {
+            "phrase": "从沙丘线那边刮过",
+            "count": 3
+          },
+          {
+            "phrase": "沙丘线那边刮过来",
+            "count": 3
+          },
+          {
+            "phrase": "丘线那边刮过来，",
+            "count": 3
+          },
+          {
+            "phrase": "线那边刮过来，带",
+            "count": 3
+          },
+          {
+            "phrase": "那边刮过来，带着",
+            "count": 3
+          },
+          {
+            "phrase": "边刮过来，带着霜",
+            "count": 3
+          },
+          {
+            "phrase": "刮过来，带着霜。",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧说他爹在账",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧说他爹在账本",
+            "count": 3
+          },
+          {
+            "phrase": "牧说他爹在账本里",
+            "count": 3
+          },
+          {
+            "phrase": "说他爹在账本里写",
+            "count": 3
+          },
+          {
+            "phrase": "。\"苏牧说他爹没",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧说他不知道。",
+            "count": 3
+          },
+          {
+            "phrase": "牧说他不知道。\"",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 电话那头 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：风从沙丘线那边刮×3；从沙丘线那边刮过×3；沙丘线那边刮过来×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "风从沙丘线那边刮",
+          "count": 3
+        },
+        {
+          "phrase": "从沙丘线那边刮过",
+          "count": 3
+        },
+        {
+          "phrase": "沙丘线那边刮过来",
+          "count": 3
+        },
+        {
+          "phrase": "丘线那边刮过来，",
+          "count": 3
+        },
+        {
+          "phrase": "线那边刮过来，带",
+          "count": 3
+        },
+        {
+          "phrase": "那边刮过来，带着",
+          "count": 3
+        },
+        {
+          "phrase": "边刮过来，带着霜",
+          "count": 3
+        },
+        {
+          "phrase": "刮过来，带着霜。",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧说他爹在账",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧说他爹在账本",
+          "count": 3
+        },
+        {
+          "phrase": "牧说他爹在账本里",
+          "count": 3
+        },
+        {
+          "phrase": "说他爹在账本里写",
+          "count": 3
+        },
+        {
+          "phrase": "。\"苏牧说他爹没",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧说他不知道。",
+          "count": 3
+        },
+        {
+          "phrase": "牧说他不知道。\"",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 电话那头 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

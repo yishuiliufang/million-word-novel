@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 2,
+  "commit_id": "MAN-05cf5e507766",
+  "created_at": "2026-10-09T16:08:56",
+  "actor": "human",
+  "reason": "ch2新增伏笔F017由commit创建时未带description，此处补全说明",
+  "patch": {
+    "characters": {},
+    "character_changes": [],
+    "foreshadowing": {
+      "F017": {
+        "description": "合同四至中北界写的是草场边际，往里压了约400亩天然草场，没有草原征占用批文；抵押的3000亩里另有1500亩没有借款对应。父亲的债在法律上有一部分是拿不属于他的东西抵押出来的。"
+      }
+    },
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}

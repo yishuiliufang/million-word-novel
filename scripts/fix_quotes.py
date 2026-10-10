@@ -16,7 +16,19 @@ This is invisible to every other check (word count, repetition, banned
 phrases) but makes the book unreadable. Run it on any chapter written through a
 shell pipeline.
 
-  fix_quotes.py --file <chapter.txt> [--report-only]
+CLI CONTRACT (now identical to what README.md / SKILL.md / CLI.md say)
+----------------------------------------------------------------------
+    fix_quotes.py --file <chapter.txt>              report only, WRITES NOTHING
+    fix_quotes.py --file <chapter.txt> --apply      rewrite the file
+    fix_quotes.py --file <chapter.txt> --json       machine-readable report
+
+Exit codes:
+    0   nothing to repair, or repairs were applied with --apply
+    1   repairs are pending and were NOT written (report-only mode)
+    2   bad arguments / unreadable file
+
+`--report-only` is kept as an explicit synonym of the default so both spellings
+from older docs work; `--apply` is the only way this tool ever writes a byte.
 """
 from __future__ import annotations
 
@@ -128,13 +140,20 @@ def repair_line(s: str):
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(
+        description="Repair dialogue lines that lost their quotation marks "
+                    "(report-only unless --apply)")
     ap.add_argument("--file", required=True)
     ap.add_argument("--apply", action="store_true",
                     help="write the repairs (default: report only, no changes)")
-    ap.add_argument("--report-only", action="store_true", help="(default) alias")
+    ap.add_argument("--report-only", action="store_true",
+                    help="explicit synonym of the default (never writes)")
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()
+
+    if not os.path.isfile(args.file):
+        sys.stderr.write("error: file not found: %s\n" % args.file)
+        return 2
 
     text = read_text(args.file)
     lines = text.split("\n")
@@ -157,7 +176,8 @@ def main() -> int:
             fixed.append(ln)
 
     result = {"file": os.path.abspath(args.file), "repaired": len(changes),
-              "kinds": kinds, "changes": changes, "applied": args.apply}
+              "kinds": kinds, "changes": changes, "applied": bool(args.apply),
+              "mode": "apply" if args.apply else "report-only"}
 
     if args.apply:
         write_text(args.file, "\n".join(fixed))

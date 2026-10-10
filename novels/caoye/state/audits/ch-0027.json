@@ -1,0 +1,332 @@
+{
+  "chapter": 27,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0027.md",
+  "sha256": "1440f0ca68e32267b8c76553b0d952ed8e67cb2fc0bedbf09fe7fca6d3c264ad",
+  "chars": 2597,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2597,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 106,
+      "avg_paragraph": 24.5,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.039,
+      "dialogue": 128
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：\"九十七头。\"她×5；九十七头。\"她说×5；十七头。\"她说，×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "\"九十七头。\"她",
+            "count": 5
+          },
+          {
+            "phrase": "九十七头。\"她说",
+            "count": 5
+          },
+          {
+            "phrase": "十七头。\"她说，",
+            "count": 5
+          },
+          {
+            "phrase": "七头。\"她说，\"",
+            "count": 5
+          },
+          {
+            "phrase": "。\"他说，\"我守",
+            "count": 5
+          },
+          {
+            "phrase": "。牛棚门关严，围",
+            "count": 5
+          },
+          {
+            "phrase": "牛棚门关严，围栏",
+            "count": 5
+          },
+          {
+            "phrase": "棚门关严，围栏好",
+            "count": 5
+          },
+          {
+            "phrase": "门关严，围栏好，",
+            "count": 5
+          },
+          {
+            "phrase": "关严，围栏好，有",
+            "count": 5
+          },
+          {
+            "phrase": "严，围栏好，有草",
+            "count": 5
+          },
+          {
+            "phrase": "，围栏好，有草。",
+            "count": 5
+          },
+          {
+            "phrase": "围栏好，有草。不",
+            "count": 5
+          },
+          {
+            "phrase": "栏好，有草。不冻",
+            "count": 5
+          },
+          {
+            "phrase": "好，有草。不冻毙",
+            "count": 5
+          },
+          {
+            "phrase": "，有草。不冻毙。",
+            "count": 5
+          },
+          {
+            "phrase": "说，\"我守117",
+            "count": 5
+          },
+          {
+            "phrase": "，\"我守117头",
+            "count": 5
+          },
+          {
+            "phrase": "\"我守117头牛",
+            "count": 5
+          },
+          {
+            "phrase": "我守117头牛。",
+            "count": 5
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 她叹 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 她又 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 她低声 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 她叹 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：\"九十七头。\"她×5；九十七头。\"她说×5；十七头。\"她说，×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "\"九十七头。\"她",
+          "count": 5
+        },
+        {
+          "phrase": "九十七头。\"她说",
+          "count": 5
+        },
+        {
+          "phrase": "十七头。\"她说，",
+          "count": 5
+        },
+        {
+          "phrase": "七头。\"她说，\"",
+          "count": 5
+        },
+        {
+          "phrase": "。\"他说，\"我守",
+          "count": 5
+        },
+        {
+          "phrase": "。牛棚门关严，围",
+          "count": 5
+        },
+        {
+          "phrase": "牛棚门关严，围栏",
+          "count": 5
+        },
+        {
+          "phrase": "棚门关严，围栏好",
+          "count": 5
+        },
+        {
+          "phrase": "门关严，围栏好，",
+          "count": 5
+        },
+        {
+          "phrase": "关严，围栏好，有",
+          "count": 5
+        },
+        {
+          "phrase": "严，围栏好，有草",
+          "count": 5
+        },
+        {
+          "phrase": "，围栏好，有草。",
+          "count": 5
+        },
+        {
+          "phrase": "围栏好，有草。不",
+          "count": 5
+        },
+        {
+          "phrase": "栏好，有草。不冻",
+          "count": 5
+        },
+        {
+          "phrase": "好，有草。不冻毙",
+          "count": 5
+        },
+        {
+          "phrase": "，有草。不冻毙。",
+          "count": 5
+        },
+        {
+          "phrase": "说，\"我守117",
+          "count": 5
+        },
+        {
+          "phrase": "，\"我守117头",
+          "count": 5
+        },
+        {
+          "phrase": "\"我守117头牛",
+          "count": 5
+        },
+        {
+          "phrase": "我守117头牛。",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 她叹 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 她又 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 她低声 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 她叹 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

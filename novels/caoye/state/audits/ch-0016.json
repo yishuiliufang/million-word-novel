@@ -1,0 +1,244 @@
+{
+  "chapter": 16,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0016.md",
+  "sha256": "e48a997187a7352de102a35dec2d94308c4c081c3d8d66be934ef50083c4b718",
+  "chars": 2698,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2698,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 134,
+      "avg_paragraph": 20.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0275,
+      "dialogue": 64
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：核定表，乡里批了×5；2024年9月，×4；你爹的核定表，乡×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "核定表，乡里批了",
+            "count": 5
+          },
+          {
+            "phrase": "2024年9月，",
+            "count": 4
+          },
+          {
+            "phrase": "你爹的核定表，乡",
+            "count": 4
+          },
+          {
+            "phrase": "爹的核定表，乡里",
+            "count": 4
+          },
+          {
+            "phrase": "的核定表，乡里批",
+            "count": 4
+          },
+          {
+            "phrase": "阿木尔的1500",
+            "count": 4
+          },
+          {
+            "phrase": "木尔的1500亩",
+            "count": 4
+          },
+          {
+            "phrase": "苏巴特尔的核定表",
+            "count": 3
+          },
+          {
+            "phrase": "巴特尔的核定表，",
+            "count": 3
+          },
+          {
+            "phrase": "。2024年9月",
+            "count": 3
+          },
+          {
+            "phrase": "定表，乡里批了。",
+            "count": 3
+          },
+          {
+            "phrase": "的26.5万，你",
+            "count": 3
+          },
+          {
+            "phrase": "，你就得还。\"苏",
+            "count": 3
+          },
+          {
+            "phrase": "你就得还。\"苏牧",
+            "count": 3
+          },
+          {
+            "phrase": "远山草业处理。\"",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：核定表，乡里批了×5；2024年9月，×4；你爹的核定表，乡×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "核定表，乡里批了",
+          "count": 5
+        },
+        {
+          "phrase": "2024年9月，",
+          "count": 4
+        },
+        {
+          "phrase": "你爹的核定表，乡",
+          "count": 4
+        },
+        {
+          "phrase": "爹的核定表，乡里",
+          "count": 4
+        },
+        {
+          "phrase": "的核定表，乡里批",
+          "count": 4
+        },
+        {
+          "phrase": "阿木尔的1500",
+          "count": 4
+        },
+        {
+          "phrase": "木尔的1500亩",
+          "count": 4
+        },
+        {
+          "phrase": "苏巴特尔的核定表",
+          "count": 3
+        },
+        {
+          "phrase": "巴特尔的核定表，",
+          "count": 3
+        },
+        {
+          "phrase": "。2024年9月",
+          "count": 3
+        },
+        {
+          "phrase": "定表，乡里批了。",
+          "count": 3
+        },
+        {
+          "phrase": "的26.5万，你",
+          "count": 3
+        },
+        {
+          "phrase": "，你就得还。\"苏",
+          "count": 3
+        },
+        {
+          "phrase": "你就得还。\"苏牧",
+          "count": 3
+        },
+        {
+          "phrase": "远山草业处理。\"",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

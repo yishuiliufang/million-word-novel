@@ -1,0 +1,88 @@
+{
+  "schema": 2,
+  "title": "草色三千里",
+  "premise": "草业博士苏牧在父亲去世后回到内蒙古草原接手家庭养牛场，却发现父亲救命的苜蓿正在把整片草原变成单一作物；他要在草畜平衡、家庭遗产、资本流转与异常气候之间，为草和牛找到活路。",
+  "root": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye",
+  "target_chars": 1000000,
+  "count_mode": "no_ws",
+  "chars_per_chapter": 3000,
+  "chars_per_chapter_min": 2550,
+  "chars_per_chapter_tolerance": [
+    2400,
+    3750
+  ],
+  "chapters_per_round": 1,
+  "estimated_chapters": 333,
+  "volume_count": 5,
+  "volume_plan": [],
+  "volumes": [
+    {
+      "volume": 1,
+      "start_chapter": 1,
+      "end_chapter": 66,
+      "chapters": 66
+    },
+    {
+      "volume": 2,
+      "start_chapter": 67,
+      "end_chapter": 132,
+      "chapters": 66
+    },
+    {
+      "volume": 3,
+      "start_chapter": 133,
+      "end_chapter": 198,
+      "chapters": 66
+    },
+    {
+      "volume": 4,
+      "start_chapter": 199,
+      "end_chapter": 264,
+      "chapters": 66
+    },
+    {
+      "volume": 5,
+      "start_chapter": 265,
+      "end_chapter": 333,
+      "chapters": 69
+    }
+  ],
+  "round_char_budget": 40000,
+  "part_chars": 3500,
+  "snapshot_base_interval": 25,
+  "auto_next": false,
+  "llm_provider": "rule",
+  "gate_policy": {
+    "require_plan": true,
+    "require_audit": true,
+    "require_canon_consistency": true
+  },
+  "rounds_completed": 31,
+  "chapters_committed": 31,
+  "created_at": "2026-10-09T15:34:29",
+  "updated_at": "2026-10-10T11:10:13",
+  "loop_protocol": {
+    "state_files": [
+      "state/progress.json",
+      "state/canon.db",
+      "state/bible.md",
+      "state/outline.md",
+      "state/plot-ledger.md",
+      "state/last-context.md",
+      "state/derived/"
+    ],
+    "resume_command": "python scripts/novel_state.py next --root \"/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye\"",
+    "stop_condition": "total_chars >= target_chars",
+    "canonical_truth_order": [
+      "chapter text",
+      "validated canon delta",
+      "canon.db",
+      "derived summaries",
+      "markdown views"
+    ]
+  },
+  "highest_chapter": 31,
+  "last_commit_at": "2026-10-10T11:10:02",
+  "last_chapter": 31,
+  "last_round_at": "2026-10-10T11:10:13"
+}

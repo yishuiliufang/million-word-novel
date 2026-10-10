@@ -58,7 +58,6 @@ def main() -> int:
     book_parts = ["# %s\n\n> 全书合计 %s 字（口径 %s）\n\n" % (
         title, format(st["total_chars"], ","), st["count_mode"])]
     vol_parts = {}
-    vol_counts = {}
 
     for n in nums:
         text = read_text(chapter_path(root, n)).strip()
@@ -67,7 +66,6 @@ def main() -> int:
         v = volume_of(prog, n)
         vol_parts.setdefault(v, ["# %s · 第%d卷\n\n" % (title, v)])
         vol_parts[v].append(block)
-        vol_counts[v] = vol_counts.get(v, 0) + 0
 
     book_file = os.path.join(p["export"], "book.txt")
     write_text(book_file, "".join(book_parts))
@@ -107,10 +105,16 @@ def main() -> int:
                 zf.write(f, os.path.basename(f))
             for n in nums:
                 zf.write(chapter_path(root, n), "chapters/ch-%04d.txt" % n)
-            for name in ("bible.md", "outline.md", "plot-ledger.md", "last-context.md", "progress.json"):
+            for name in ("bible.md", "outline.md", "plot-ledger.md", "last-context.md",
+                         "progress.json", "canon.db"):
                 fp = os.path.join(p["state"], name)
                 if os.path.isfile(fp):
                     zf.write(fp, "state/%s" % name)
+            if os.path.isdir(p["snapshots"]):
+                for name in sorted(os.listdir(p["snapshots"])):
+                    if name.endswith(".json"):
+                        zf.write(os.path.join(p["snapshots"], name),
+                                 "state/snapshots/%s" % name)
             zf.write(os.path.abspath(__file__), "scripts/export_novel.py")
 
     jprint({

@@ -1,0 +1,200 @@
+{
+  "schema": 1,
+  "chapter": 19,
+  "source": "rule",
+  "created_at": "2026-10-09T22:15:47",
+  "volume": 1,
+  "arc": null,
+  "chapter_goal": "推进T1",
+  "core_conflict": "（未指定冲突，由写作者按本章目标推导）",
+  "must_advance_main": [
+    "T1"
+  ],
+  "must_advance_sub": [
+    "T2",
+    "T3"
+  ],
+  "characters": [
+    "阿木尔",
+    "苏牧",
+    "苏巴特尔",
+    "娜仁",
+    "唐远山",
+    "林晚"
+  ],
+  "character_state_at_entry": {
+    "阿木尔": {
+      "location": null,
+      "goal": "认地书在手里；等远山草业把那1500亩从抵押物里划掉",
+      "emotion": "阿木尔说苏巴特尔瞒了他八个月；老周见过苏巴特尔的账本；阿木尔愿意跟苏牧一起去守老周，帮他爹把东西要回来",
+      "status": "alive"
+    },
+    "苏牧": {
+      "location": "巴音乌拉草场",
+      "goal": "他去乡里找批文，乡里的人说不知道400亩的事；批文不是文件，是流程；流程需要时间；他只有5天",
+      "emotion": "他到旗里远山草业分公司找唐远山；唐远山给方案要压林晚的稿子；苏牧说不压，我爹的事我自己了；他回到牛场，娜仁问他能不能了",
+      "status": "alive"
+    },
+    "苏巴特尔": {
+      "location": null,
+      "goal": "让儿子接班，让牛场不垮",
+      "emotion": "赶在寒流前收完最后一垄苜蓿的执念",
+      "status": "dead"
+    },
+    "娜仁": {
+      "location": null,
+      "goal": "保住牛场，不让儿子再次离开",
+      "emotion": "苏牧打完电话回来，她说你爹不是敲门砖，你爹是一个人；你爹签了合同，信了老周，没签核定表，等到死",
+      "status": "alive"
+    },
+    "唐远山": {
+      "location": null,
+      "goal": "用苜蓿基地做成中国草业第一股并出口海外",
+      "emotion": null,
+      "status": "alive"
+    },
+    "林晚": {
+      "location": null,
+      "goal": "把草原生态议题写进公共视野",
+      "emotion": "林晚把稿子给苏牧看，告诉他老周在批文里出现七次，管了七件事；告诉他先找阿木尔再找老周；说苏禾画了一幅画挂在她床头",
+      "status": "alive"
+    }
+  },
+  "location": null,
+  "timeline": {
+    "world_time": "故事开始年 10月20日"
+  },
+  "must_change": [],
+  "allowed_new_info": [],
+  "forbidden_reveals": [],
+  "relevant_foreshadowing": [
+    {
+      "code": "F002",
+      "status": "ACTIVE",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 8,
+      "planned_payoff_end": 12,
+      "overdue": true
+    },
+    {
+      "code": "F005",
+      "status": "ACTIVE",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 7,
+      "planned_payoff_end": 10,
+      "overdue": true
+    },
+    {
+      "code": "F006",
+      "status": "PLANTED",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 10,
+      "planned_payoff_end": 14,
+      "overdue": true
+    },
+    {
+      "code": "F014",
+      "status": "PLANTED",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 9,
+      "planned_payoff_end": 15,
+      "overdue": true
+    },
+    {
+      "code": "F017",
+      "status": "ACTIVE",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 6,
+      "planned_payoff_end": 10,
+      "overdue": true
+    },
+    {
+      "code": "F018",
+      "status": "ACTIVE",
+      "why": "已超过计划回收窗口，逾期未收；逾期标记",
+      "planned_payoff_start": 5,
+      "planned_payoff_end": 8,
+      "overdue": true
+    },
+    {
+      "code": "F004",
+      "status": "PLANTED",
+      "why": "已超过计划回收窗口，逾期未收",
+      "planned_payoff_start": 12,
+      "planned_payoff_end": 16,
+      "overdue": false
+    },
+    {
+      "code": "F007",
+      "status": "PLANTED",
+      "why": "已超过计划回收窗口，逾期未收",
+      "planned_payoff_start": 12,
+      "planned_payoff_end": 18,
+      "overdue": false
+    },
+    {
+      "code": "F009",
+      "status": "PLANTED",
+      "why": "已进入计划回收窗口(16-22)",
+      "planned_payoff_start": 16,
+      "planned_payoff_end": 22,
+      "overdue": false
+    },
+    {
+      "code": "F010",
+      "status": "PLANTED",
+      "why": "已进入计划回收窗口(18-24)",
+      "planned_payoff_start": 18,
+      "planned_payoff_end": 24,
+      "overdue": false
+    },
+    {
+      "code": "F011",
+      "status": "PLANTED",
+      "why": "已进入计划回收窗口(14-20)",
+      "planned_payoff_start": 14,
+      "planned_payoff_end": 20,
+      "overdue": false
+    },
+    {
+      "code": "F008",
+      "status": "PLANTED",
+      "why": "距计划回收窗口还有 1 章",
+      "planned_payoff_start": 20,
+      "planned_payoff_end": 26,
+      "overdue": false
+    }
+  ],
+  "required_end_state": [
+    "伏笔 F002 必须在本章推进或回收（逾期）",
+    "伏笔 F005 必须在本章推进或回收（逾期）",
+    "伏笔 F006 必须在本章推进或回收（逾期）",
+    "伏笔 F014 必须在本章推进或回收（逾期）",
+    "伏笔 F017 必须在本章推进或回收（逾期）",
+    "伏笔 F018 必须在本章推进或回收（逾期）"
+  ],
+  "scene_count": 1,
+  "scenes": [
+    {
+      "scene_no": 1,
+      "location": null,
+      "participants": [
+        "阿木尔",
+        "苏牧",
+        "苏巴特尔",
+        "娜仁"
+      ],
+      "conflict": "（未指定冲突，由写作者按本章目标推导）",
+      "summary": "",
+      "dialogue_function": ""
+    }
+  ],
+  "questions_to_resolve": [],
+  "forbidden_events": [],
+  "notes": "本卷不可逆变化：苏牧签下牛场债务与草场承包权，从可以随时离开的人变成永远不能离开的人；白灾预警把他钉在草原上",
+  "validated_at": "2026-10-09T22:15:48",
+  "validation": {
+    "ok": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "chapter": 2,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0002.md",
+  "sha256": "820cf77f732cfd1afaebff4aab8a00120a55e213c931e7968570940a2906c941",
+  "chars": 2506,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2506,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 101,
+      "avg_paragraph": 24.8,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0028,
+      "dialogue": 75
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月14日",
+      "timeline_prev": "故事开始年 09月18日-10月04日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [],
+  "pass": true
+}

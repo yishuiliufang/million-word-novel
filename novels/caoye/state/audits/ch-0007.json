@@ -1,0 +1,118 @@
+{
+  "chapter": 7,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0007.md",
+  "sha256": "31769e390b39e3f12315b1ca7420fc52cbf66d109e5965a279811ac06be5050b",
+  "chars": 2407,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2407,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 114,
+      "avg_paragraph": 21.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.1113,
+      "dialogue": 35
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：\"等他们来。\"\"×3；风从沙丘线那边刮×3；从沙丘线那边刮过×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "\"等他们来。\"\"",
+            "count": 3
+          },
+          {
+            "phrase": "风从沙丘线那边刮",
+            "count": 3
+          },
+          {
+            "phrase": "从沙丘线那边刮过",
+            "count": 3
+          },
+          {
+            "phrase": "沙丘线那边刮过来",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧坐在饲槽边，",
+            "count": 3
+          },
+          {
+            "phrase": "，牛鼻子喷出来的",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月19日",
+      "timeline_prev": "故事开始年 10月18日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：\"等他们来。\"\"×3；风从沙丘线那边刮×3；从沙丘线那边刮过×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "\"等他们来。\"\"",
+          "count": 3
+        },
+        {
+          "phrase": "风从沙丘线那边刮",
+          "count": 3
+        },
+        {
+          "phrase": "从沙丘线那边刮过",
+          "count": 3
+        },
+        {
+          "phrase": "沙丘线那边刮过来",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧坐在饲槽边，",
+          "count": 3
+        },
+        {
+          "phrase": "，牛鼻子喷出来的",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

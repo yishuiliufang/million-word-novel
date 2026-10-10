@@ -1,0 +1,94 @@
+{
+  "chapter": 4,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0004.md",
+  "sha256": "39916828a2bacc48d06766faf1da09a402712757a9a91f20ee5a9e12e939805a",
+  "chars": 2421,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2421,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 101,
+      "avg_paragraph": 24.0,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0187,
+      "dialogue": 55
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"阿木尔说，\"×4；。\"\"我知道。\"×3；\"\"我知道。\"\"×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"阿木尔说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"\"我知道。\"",
+            "count": 3
+          },
+          {
+            "phrase": "\"\"我知道。\"\"",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月16日",
+      "timeline_prev": "故事开始年 10月15日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"阿木尔说，\"×4；。\"\"我知道。\"×3；\"\"我知道。\"\"×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"阿木尔说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"\"我知道。\"",
+          "count": 3
+        },
+        {
+          "phrase": "\"\"我知道。\"\"",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

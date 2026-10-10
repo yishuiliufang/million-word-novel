@@ -1,0 +1,94 @@
+{
+  "chapter": 5,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0005.md",
+  "sha256": "3dcbd1f28c921269df41a23f08151402ef9ae13cfc92561c638496af6ac0ed74",
+  "chars": 2466,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2466,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 97,
+      "avg_paragraph": 25.6,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0122,
+      "dialogue": 48
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：付8000种子没×3；8000种子没说×3；000种子没说\"×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "付8000种子没",
+            "count": 3
+          },
+          {
+            "phrase": "8000种子没说",
+            "count": 3
+          },
+          {
+            "phrase": "000种子没说\"",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月17日",
+      "timeline_prev": "故事开始年 10月16日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：付8000种子没×3；8000种子没说×3；000种子没说\"×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "付8000种子没",
+          "count": 3
+        },
+        {
+          "phrase": "8000种子没说",
+          "count": 3
+        },
+        {
+          "phrase": "000种子没说\"",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

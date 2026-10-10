@@ -1,0 +1,252 @@
+{
+  "chapter": 15,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0015.md",
+  "sha256": "01be7bbb8edef25bdb9a00cdb55914b7c27376944ce0b4076ba8f05f6c6cf759",
+  "chars": 3266,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 3266,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 166,
+      "avg_paragraph": 19.7,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0227,
+      "dialogue": 76
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：阿木尔坐在炕上，×3；\"苏牧看着阿木尔×3；苏牧看着阿木尔。×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "阿木尔坐在炕上，",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧看着阿木尔",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧看着阿木尔。",
+            "count": 3
+          },
+          {
+            "phrase": "你爹把阿木尔的地",
+            "count": 3
+          },
+          {
+            "phrase": "爹把阿木尔的地签",
+            "count": 3
+          },
+          {
+            "phrase": "把阿木尔的地签进",
+            "count": 3
+          },
+          {
+            "phrase": "阿木尔的地签进去",
+            "count": 3
+          },
+          {
+            "phrase": "木尔的地签进去了",
+            "count": 3
+          },
+          {
+            "phrase": "尔的地签进去了，",
+            "count": 3
+          },
+          {
+            "phrase": "。\"你爹的事。你",
+            "count": 3
+          },
+          {
+            "phrase": "\"你爹的事。你爹",
+            "count": 3
+          },
+          {
+            "phrase": "？\"苏牧没说话。",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧没说话。\"",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧说为什么。",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧说为什么。\"",
+            "count": 3
+          },
+          {
+            "phrase": "爹拿给老周看过。",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：阿木尔坐在炕上，×3；\"苏牧看着阿木尔×3；苏牧看着阿木尔。×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "阿木尔坐在炕上，",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧看着阿木尔",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧看着阿木尔。",
+          "count": 3
+        },
+        {
+          "phrase": "你爹把阿木尔的地",
+          "count": 3
+        },
+        {
+          "phrase": "爹把阿木尔的地签",
+          "count": 3
+        },
+        {
+          "phrase": "把阿木尔的地签进",
+          "count": 3
+        },
+        {
+          "phrase": "阿木尔的地签进去",
+          "count": 3
+        },
+        {
+          "phrase": "木尔的地签进去了",
+          "count": 3
+        },
+        {
+          "phrase": "尔的地签进去了，",
+          "count": 3
+        },
+        {
+          "phrase": "。\"你爹的事。你",
+          "count": 3
+        },
+        {
+          "phrase": "\"你爹的事。你爹",
+          "count": 3
+        },
+        {
+          "phrase": "？\"苏牧没说话。",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧没说话。\"",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧说为什么。",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧说为什么。\"",
+          "count": 3
+        },
+        {
+          "phrase": "爹拿给老周看过。",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

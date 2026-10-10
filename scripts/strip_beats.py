@@ -1,23 +1,27 @@
-"""Remove or repair stage beats that polish_prose.fix_replies() inserted wrongly.
+#!/usr/bin/env python3
+"""Remove action beats that interrupt a dialogue exchange (repair tool).
 
-WHY THIS EXISTS:
-`fix_replies()` replaces staccato bare replies ("是。") with a generic beat so the
-page stops reading like a ping-pong match. But it is blind to who is speaking and
-to what the reply actually meant. Measured damage in a real chapter:
+`polish_prose.fix_replies()` used to insert generic beats between two lines of
+dialogue, which reads as a fake pause and can attribute an action to the wrong
+speaker. That pass is now CANON-AFFECTING and off by default; this tool exists to
+repair drafts written before the change (or produced with --allow-canon-edits).
 
-    "你十九岁。"他说。
-    她应了一声。          <- inserted; but the next line is a question, not a reply
-    "你想了多久？"
+  strip_beats.py <chapter> [--apply] [--json]
 
-    "两百三十八行里..."陈老师抬起头
-    她应道。              <- inserted mid-exchange, speaker was 陈老师 (male)
-    他点头。              <- another inserted beat
-
-The fix: delete beats that sit *between* two dialogue lines (they interrupt an
-exchange and add nothing), and demote the rest to a neutral narration line.
+Without --apply nothing is written. Exit code 1 when interruptions are found and
+were not removed.
 """
+from __future__ import annotations
+
+import argparse
+import json
+import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from _common import read_text, write_text  # noqa: E402
 
 NEUTRAL_BEATS = (
     "他点了点头。", "她应了一声。", "他把头低下去。", "她没有反驳。",
@@ -28,51 +32,62 @@ NEUTRAL_BEATS = (
     "他点头。", "她点头。", "他应了一声。",
 )
 
-# sentences that make a beat read as narration rather than a reply
 DANGLING = re.compile(r"^(他|她)(应|承认|点头|站起|坐下|看|把|没有)")
 
 
-def main():
-    apply = "--apply" in sys.argv
-    path = [a for a in sys.argv[1:] if not a.startswith("--")][0]
-    lines = open(path, encoding="utf-8").read().split("\n")
-
-    out = []
-    removed = 0
-    kept = 0
-    kept_lines = []
+def process(text: str) -> tuple:
+    lines = text.split("\n")
+    out, removed, kept = [], [], []
     for i, ln in enumerate(lines):
         s = ln.strip()
         if s in NEUTRAL_BEATS:
-            # previous non-empty output line
             prev = ""
             for j in range(len(out) - 1, -1, -1):
                 if out[j].strip():
                     prev = out[j].strip()
                     break
-            # next non-empty source line
             nxt = ""
             for j in range(i + 1, len(lines)):
                 if lines[j].strip():
                     nxt = lines[j].strip()
                     break
-            # A beat that sits inside a run of dialogue is an artifact: it was
-            # generated from a bare "是。" that the exchange did not need.
-            prev_dlg = '"' in prev
-            next_dlg = '"' in nxt
-            if prev_dlg and next_dlg:
-                removed += 1
+            if '"' in prev and '"' in nxt:
+                removed.append({"line": i + 1, "text": s})
                 continue
-            kept += 1
+            kept.append({"line": i + 1, "text": s})
         out.append(ln)
+    return "\n".join(out), removed, kept
 
-    print("%s: 删除打断对话的动作行 %d，保留 %d" % (path.split("\\")[-1], removed, kept))
-    if apply:
-        open(path, "w", encoding="utf-8", newline="\n").write("\n".join(out))
-        print("  已写入")
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="Remove dialogue-interrupting action beats")
+    ap.add_argument("file")
+    ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--json", action="store_true")
+    args = ap.parse_args()
+
+    if not os.path.isfile(args.file):
+        sys.stderr.write("error: file not found: %s\n" % args.file)
+        return 2
+
+    text = read_text(args.file)
+    new, removed, kept = process(text)
+    result = {"file": os.path.abspath(args.file), "removed": len(removed),
+              "kept": len(kept), "applied": bool(args.apply),
+              "removed_lines": removed[:20]}
+    if args.apply and removed:
+        write_text(args.file, new)
+    if args.json:
+        sys.stdout.write(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     else:
-        print("  （未写入，加 --apply 执行）")
+        print("%s: 删除打断对话的动作行 %d，保留 %d"
+              % (os.path.basename(args.file), len(removed), len(kept)))
+        if removed and not args.apply:
+            print("  （未写入，加 --apply 执行）")
+        elif removed:
+            print("  已写入")
+    return 1 if (removed and not args.apply) else 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -1,0 +1,284 @@
+{
+  "chapter": 18,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0018.md",
+  "sha256": "01e3836ae433b45847d2c49560c56f4eb6f76ed109d630796f449e3775078e1a",
+  "chars": 3253,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 3253,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 162,
+      "avg_paragraph": 20.1,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0456,
+      "dialogue": 84
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。2027年，地×5；合同不完整，远山×4；同不完整，远山草×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。2027年，地",
+            "count": 5
+          },
+          {
+            "phrase": "合同不完整，远山",
+            "count": 4
+          },
+          {
+            "phrase": "同不完整，远山草",
+            "count": 4
+          },
+          {
+            "phrase": "不完整，远山草业",
+            "count": 4
+          },
+          {
+            "phrase": "写了三年后流转。",
+            "count": 4
+          },
+          {
+            "phrase": "远山草业。\"苏牧",
+            "count": 4
+          },
+          {
+            "phrase": "山草业。\"苏牧说",
+            "count": 4
+          },
+          {
+            "phrase": "。\"你爹的事。你",
+            "count": 4
+          },
+          {
+            "phrase": "了，你接。202",
+            "count": 4
+          },
+          {
+            "phrase": "，你接。2027",
+            "count": 4
+          },
+          {
+            "phrase": "你接。2027年",
+            "count": 4
+          },
+          {
+            "phrase": "接。2027年，",
+            "count": 4
+          },
+          {
+            "phrase": "2027年，地流",
+            "count": 4
+          },
+          {
+            "phrase": "027年，地流转",
+            "count": 4
+          },
+          {
+            "phrase": "。你接了你爹的事",
+            "count": 4
+          },
+          {
+            "phrase": "。\"合同不完整。",
+            "count": 3
+          },
+          {
+            "phrase": "。合同不完整，远",
+            "count": 3
+          },
+          {
+            "phrase": "，合同里写了三年",
+            "count": 3
+          },
+          {
+            "phrase": "合同里写了三年后",
+            "count": 3
+          },
+          {
+            "phrase": "同里写了三年后流",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。2027年，地×5；合同不完整，远山×4；同不完整，远山草×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。2027年，地",
+          "count": 5
+        },
+        {
+          "phrase": "合同不完整，远山",
+          "count": 4
+        },
+        {
+          "phrase": "同不完整，远山草",
+          "count": 4
+        },
+        {
+          "phrase": "不完整，远山草业",
+          "count": 4
+        },
+        {
+          "phrase": "写了三年后流转。",
+          "count": 4
+        },
+        {
+          "phrase": "远山草业。\"苏牧",
+          "count": 4
+        },
+        {
+          "phrase": "山草业。\"苏牧说",
+          "count": 4
+        },
+        {
+          "phrase": "。\"你爹的事。你",
+          "count": 4
+        },
+        {
+          "phrase": "了，你接。202",
+          "count": 4
+        },
+        {
+          "phrase": "，你接。2027",
+          "count": 4
+        },
+        {
+          "phrase": "你接。2027年",
+          "count": 4
+        },
+        {
+          "phrase": "接。2027年，",
+          "count": 4
+        },
+        {
+          "phrase": "2027年，地流",
+          "count": 4
+        },
+        {
+          "phrase": "027年，地流转",
+          "count": 4
+        },
+        {
+          "phrase": "。你接了你爹的事",
+          "count": 4
+        },
+        {
+          "phrase": "。\"合同不完整。",
+          "count": 3
+        },
+        {
+          "phrase": "。合同不完整，远",
+          "count": 3
+        },
+        {
+          "phrase": "，合同里写了三年",
+          "count": 3
+        },
+        {
+          "phrase": "合同里写了三年后",
+          "count": 3
+        },
+        {
+          "phrase": "同里写了三年后流",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

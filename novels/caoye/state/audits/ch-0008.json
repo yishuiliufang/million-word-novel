@@ -1,0 +1,230 @@
+{
+  "chapter": 8,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0008.md",
+  "sha256": "ba7531e593405b84bb796210d3fd345f7f2bcc08bb60039234d656a585fccd8c",
+  "chars": 2407,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2407,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 102,
+      "avg_paragraph": 23.6,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0852,
+      "dialogue": 35
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。苏牧站在饭桌边×5；。\"穿黑夹克的把×5；穿黑夹克的把合同×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。苏牧站在饭桌边",
+            "count": 5
+          },
+          {
+            "phrase": "。\"穿黑夹克的把",
+            "count": 5
+          },
+          {
+            "phrase": "穿黑夹克的把合同",
+            "count": 5
+          },
+          {
+            "phrase": "。\"穿灰毛衣的说",
+            "count": 5
+          },
+          {
+            "phrase": "\"穿灰毛衣的说。",
+            "count": 5
+          },
+          {
+            "phrase": "苏牧站在饭桌边，",
+            "count": 4
+          },
+          {
+            "phrase": "。\"26.5万。",
+            "count": 4
+          },
+          {
+            "phrase": "\"26.5万。\"",
+            "count": 4
+          },
+          {
+            "phrase": "之前看到钱。\"穿",
+            "count": 4
+          },
+          {
+            "phrase": "。娜仁在灶台前，",
+            "count": 3
+          },
+          {
+            "phrase": "上印着远山草业的",
+            "count": 3
+          },
+          {
+            "phrase": "印着远山草业的字",
+            "count": 3
+          },
+          {
+            "phrase": "着远山草业的字，",
+            "count": 3
+          },
+          {
+            "phrase": "是2024年5月",
+            "count": 3
+          },
+          {
+            "phrase": "2024年5月1",
+            "count": 3
+          },
+          {
+            "phrase": "024年5月12",
+            "count": 3
+          },
+          {
+            "phrase": "24年5月12号",
+            "count": 3
+          },
+          {
+            "phrase": "\"穿黑夹克的把合",
+            "count": 3
+          },
+          {
+            "phrase": "穿灰毛衣的说。\"",
+            "count": 3
+          },
+          {
+            "phrase": "3000亩。\"穿",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": "故事开始年 10月20日",
+      "timeline_prev": "故事开始年 10月19日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。苏牧站在饭桌边×5；。\"穿黑夹克的把×5；穿黑夹克的把合同×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。苏牧站在饭桌边",
+          "count": 5
+        },
+        {
+          "phrase": "。\"穿黑夹克的把",
+          "count": 5
+        },
+        {
+          "phrase": "穿黑夹克的把合同",
+          "count": 5
+        },
+        {
+          "phrase": "。\"穿灰毛衣的说",
+          "count": 5
+        },
+        {
+          "phrase": "\"穿灰毛衣的说。",
+          "count": 5
+        },
+        {
+          "phrase": "苏牧站在饭桌边，",
+          "count": 4
+        },
+        {
+          "phrase": "。\"26.5万。",
+          "count": 4
+        },
+        {
+          "phrase": "\"26.5万。\"",
+          "count": 4
+        },
+        {
+          "phrase": "之前看到钱。\"穿",
+          "count": 4
+        },
+        {
+          "phrase": "。娜仁在灶台前，",
+          "count": 3
+        },
+        {
+          "phrase": "上印着远山草业的",
+          "count": 3
+        },
+        {
+          "phrase": "印着远山草业的字",
+          "count": 3
+        },
+        {
+          "phrase": "着远山草业的字，",
+          "count": 3
+        },
+        {
+          "phrase": "是2024年5月",
+          "count": 3
+        },
+        {
+          "phrase": "2024年5月1",
+          "count": 3
+        },
+        {
+          "phrase": "024年5月12",
+          "count": 3
+        },
+        {
+          "phrase": "24年5月12号",
+          "count": 3
+        },
+        {
+          "phrase": "\"穿黑夹克的把合",
+          "count": 3
+        },
+        {
+          "phrase": "穿灰毛衣的说。\"",
+          "count": 3
+        },
+        {
+          "phrase": "3000亩。\"穿",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

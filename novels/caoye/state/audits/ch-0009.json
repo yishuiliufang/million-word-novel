@@ -1,0 +1,230 @@
+{
+  "chapter": 9,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0009.md",
+  "sha256": "ff9c8bdefe2a00e12e50aabaac115c33bb7783a8aa4d80d07b4773a303ddca19",
+  "chars": 2514,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2514,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 140,
+      "avg_paragraph": 18.0,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.1022,
+      "dialogue": 23
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：外的风从沙丘线那×4；的风从沙丘线那边×4；风从沙丘线那边刮×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "外的风从沙丘线那",
+            "count": 4
+          },
+          {
+            "phrase": "的风从沙丘线那边",
+            "count": 4
+          },
+          {
+            "phrase": "风从沙丘线那边刮",
+            "count": 4
+          },
+          {
+            "phrase": "从沙丘线那边刮过",
+            "count": 4
+          },
+          {
+            "phrase": "沙丘线那边刮过来",
+            "count": 4
+          },
+          {
+            "phrase": "丘线那边刮过来，",
+            "count": 4
+          },
+          {
+            "phrase": "线那边刮过来，带",
+            "count": 4
+          },
+          {
+            "phrase": "那边刮过来，带着",
+            "count": 4
+          },
+          {
+            "phrase": "边刮过来，带着霜",
+            "count": 4
+          },
+          {
+            "phrase": "刮过来，带着霜。",
+            "count": 4
+          },
+          {
+            "phrase": "过来，带着霜。苏",
+            "count": 4
+          },
+          {
+            "phrase": "来，带着霜。苏牧",
+            "count": 4
+          },
+          {
+            "phrase": "不知道400亩的",
+            "count": 3
+          },
+          {
+            "phrase": "知道400亩的事",
+            "count": 3
+          },
+          {
+            "phrase": "道400亩的事。",
+            "count": 3
+          },
+          {
+            "phrase": "苏巴特尔没有签字",
+            "count": 3
+          },
+          {
+            "phrase": "巴特尔没有签字。",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧说那400亩",
+            "count": 3
+          },
+          {
+            "phrase": "。赵海生把核定表",
+            "count": 3
+          },
+          {
+            "phrase": "。赵海生把老花镜",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：外的风从沙丘线那×4；的风从沙丘线那边×4；风从沙丘线那边刮×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "外的风从沙丘线那",
+          "count": 4
+        },
+        {
+          "phrase": "的风从沙丘线那边",
+          "count": 4
+        },
+        {
+          "phrase": "风从沙丘线那边刮",
+          "count": 4
+        },
+        {
+          "phrase": "从沙丘线那边刮过",
+          "count": 4
+        },
+        {
+          "phrase": "沙丘线那边刮过来",
+          "count": 4
+        },
+        {
+          "phrase": "丘线那边刮过来，",
+          "count": 4
+        },
+        {
+          "phrase": "线那边刮过来，带",
+          "count": 4
+        },
+        {
+          "phrase": "那边刮过来，带着",
+          "count": 4
+        },
+        {
+          "phrase": "边刮过来，带着霜",
+          "count": 4
+        },
+        {
+          "phrase": "刮过来，带着霜。",
+          "count": 4
+        },
+        {
+          "phrase": "过来，带着霜。苏",
+          "count": 4
+        },
+        {
+          "phrase": "来，带着霜。苏牧",
+          "count": 4
+        },
+        {
+          "phrase": "不知道400亩的",
+          "count": 3
+        },
+        {
+          "phrase": "知道400亩的事",
+          "count": 3
+        },
+        {
+          "phrase": "道400亩的事。",
+          "count": 3
+        },
+        {
+          "phrase": "苏巴特尔没有签字",
+          "count": 3
+        },
+        {
+          "phrase": "巴特尔没有签字。",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧说那400亩",
+          "count": 3
+        },
+        {
+          "phrase": "。赵海生把核定表",
+          "count": 3
+        },
+        {
+          "phrase": "。赵海生把老花镜",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

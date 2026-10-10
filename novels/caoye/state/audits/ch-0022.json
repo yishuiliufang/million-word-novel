@@ -1,0 +1,223 @@
+{
+  "chapter": 22,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0022.md",
+  "sha256": "fdf006dc98b1ed9132aaf2308648ee30ef633566044aeb965e343d43503bd545",
+  "chars": 2586,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2586,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 122,
+      "avg_paragraph": 21.2,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.0372,
+      "dialogue": 125
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"娜仁说，\"你×5；你爹的事，了了。×4；爹的事，了了。\"×4",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"娜仁说，\"你",
+            "count": 5
+          },
+          {
+            "phrase": "你爹的事，了了。",
+            "count": 4
+          },
+          {
+            "phrase": "爹的事，了了。\"",
+            "count": 4
+          },
+          {
+            "phrase": "了。\"苏牧说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "。\"娜仁看着苏牧",
+            "count": 4
+          },
+          {
+            "phrase": "\"娜仁看着苏牧。",
+            "count": 4
+          },
+          {
+            "phrase": "娜仁看着苏牧。\"",
+            "count": 4
+          },
+          {
+            "phrase": "仁看着苏牧。\"你",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧说：\"我",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧说，\"爹",
+            "count": 4
+          },
+          {
+            "phrase": "3.2万。\"苏牧",
+            "count": 4
+          },
+          {
+            "phrase": "守草。\"\"守草。",
+            "count": 4
+          },
+          {
+            "phrase": "草。\"\"守草。\"",
+            "count": 4
+          },
+          {
+            "phrase": "牛。\"娜仁说，\"",
+            "count": 4
+          },
+          {
+            "phrase": "你卖了爹的牛。\"",
+            "count": 4
+          },
+          {
+            "phrase": "了。\"娜仁说，\"",
+            "count": 3
+          },
+          {
+            "phrase": "说，\"你爹的事，",
+            "count": 3
+          },
+          {
+            "phrase": "\"你爹的事，了了",
+            "count": 3
+          },
+          {
+            "phrase": "的事，了了。\"苏",
+            "count": 3
+          },
+          {
+            "phrase": "事，了了。\"苏牧",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日"
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"娜仁说，\"你×5；你爹的事，了了。×4；爹的事，了了。\"×4",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"娜仁说，\"你",
+          "count": 5
+        },
+        {
+          "phrase": "你爹的事，了了。",
+          "count": 4
+        },
+        {
+          "phrase": "爹的事，了了。\"",
+          "count": 4
+        },
+        {
+          "phrase": "了。\"苏牧说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "。\"娜仁看着苏牧",
+          "count": 4
+        },
+        {
+          "phrase": "\"娜仁看着苏牧。",
+          "count": 4
+        },
+        {
+          "phrase": "娜仁看着苏牧。\"",
+          "count": 4
+        },
+        {
+          "phrase": "仁看着苏牧。\"你",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧说：\"我",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧说，\"爹",
+          "count": 4
+        },
+        {
+          "phrase": "3.2万。\"苏牧",
+          "count": 4
+        },
+        {
+          "phrase": "守草。\"\"守草。",
+          "count": 4
+        },
+        {
+          "phrase": "草。\"\"守草。\"",
+          "count": 4
+        },
+        {
+          "phrase": "牛。\"娜仁说，\"",
+          "count": 4
+        },
+        {
+          "phrase": "你卖了爹的牛。\"",
+          "count": 4
+        },
+        {
+          "phrase": "了。\"娜仁说，\"",
+          "count": 3
+        },
+        {
+          "phrase": "说，\"你爹的事，",
+          "count": 3
+        },
+        {
+          "phrase": "\"你爹的事，了了",
+          "count": 3
+        },
+        {
+          "phrase": "的事，了了。\"苏",
+          "count": 3
+        },
+        {
+          "phrase": "事，了了。\"苏牧",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

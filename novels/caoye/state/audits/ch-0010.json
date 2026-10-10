@@ -1,0 +1,204 @@
+{
+  "chapter": 10,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0010.md",
+  "sha256": "cb4774fada6548ddb923845b670b4770bc40a0f1a9a9c31633e7b2e8ea836642",
+  "chars": 2501,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2501,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 101,
+      "avg_paragraph": 24.8,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.2026,
+      "dialogue": 44
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：灶膛里的火苗矮了×3；赵海生说批文在乡×3；海生说批文在乡里×3",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "灶膛里的火苗矮了",
+            "count": 3
+          },
+          {
+            "phrase": "赵海生说批文在乡",
+            "count": 3
+          },
+          {
+            "phrase": "海生说批文在乡里",
+            "count": 3
+          },
+          {
+            "phrase": "生说批文在乡里。",
+            "count": 3
+          },
+          {
+            "phrase": "来，指尖是凉的。",
+            "count": 3
+          },
+          {
+            "phrase": "是2024年9月",
+            "count": 3
+          },
+          {
+            "phrase": "需要多少时间。\"",
+            "count": 3
+          },
+          {
+            "phrase": "风从沙丘线那边刮",
+            "count": 3
+          },
+          {
+            "phrase": "从沙丘线那边刮过",
+            "count": 3
+          },
+          {
+            "phrase": "沙丘线那边刮过来",
+            "count": 3
+          },
+          {
+            "phrase": "丘线那边刮过来，",
+            "count": 3
+          },
+          {
+            "phrase": "线那边刮过来，带",
+            "count": 3
+          },
+          {
+            "phrase": "那边刮过来，带着",
+            "count": 3
+          },
+          {
+            "phrase": "边刮过来，带着霜",
+            "count": 3
+          },
+          {
+            "phrase": "刮过来，带着霜。",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "code": "PREV_OVERLAP",
+        "message": "与上一章 8-gram 重复率 20.3%（>12%）——辅助指标，请人工确认是否在复述前文",
+        "severity": "warning",
+        "blocking": false,
+        "ratio": 0.2026
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [],
+        "untouched_foreshadowing": [],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：灶膛里的火苗矮了×3；赵海生说批文在乡×3；海生说批文在乡里×3",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "灶膛里的火苗矮了",
+          "count": 3
+        },
+        {
+          "phrase": "赵海生说批文在乡",
+          "count": 3
+        },
+        {
+          "phrase": "海生说批文在乡里",
+          "count": 3
+        },
+        {
+          "phrase": "生说批文在乡里。",
+          "count": 3
+        },
+        {
+          "phrase": "来，指尖是凉的。",
+          "count": 3
+        },
+        {
+          "phrase": "是2024年9月",
+          "count": 3
+        },
+        {
+          "phrase": "需要多少时间。\"",
+          "count": 3
+        },
+        {
+          "phrase": "风从沙丘线那边刮",
+          "count": 3
+        },
+        {
+          "phrase": "从沙丘线那边刮过",
+          "count": 3
+        },
+        {
+          "phrase": "沙丘线那边刮过来",
+          "count": 3
+        },
+        {
+          "phrase": "丘线那边刮过来，",
+          "count": 3
+        },
+        {
+          "phrase": "线那边刮过来，带",
+          "count": 3
+        },
+        {
+          "phrase": "那边刮过来，带着",
+          "count": 3
+        },
+        {
+          "phrase": "边刮过来，带着霜",
+          "count": 3
+        },
+        {
+          "phrase": "刮过来，带着霜。",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "PREV_OVERLAP",
+      "message": "与上一章 8-gram 重复率 20.3%（>12%）——辅助指标，请人工确认是否在复述前文",
+      "severity": "warning",
+      "blocking": false,
+      "ratio": 0.2026
+    }
+  ],
+  "pass": true
+}

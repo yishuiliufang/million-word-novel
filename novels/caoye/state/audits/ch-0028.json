@@ -1,0 +1,296 @@
+{
+  "chapter": 28,
+  "exists": true,
+  "file": "/mnt/c/Users/Administrator/Downloads/dsh/million-word-novel-main/novels/caoye/drafts/ch-0028.md",
+  "sha256": "3662deeb6367276b839e8f68cafe2325c76df239cbfa8de0137f3a0fc638f665",
+  "chars": 2528,
+  "count_mode": "no_ws",
+  "levels": [
+    1,
+    2
+  ],
+  "level1": {
+    "level": 1,
+    "metrics": {
+      "chars": 2528,
+      "mode": "no_ws",
+      "target_range": [
+        2400,
+        3750
+      ],
+      "paragraphs": 115,
+      "avg_paragraph": 22.0,
+      "banned_hits": 0,
+      "repetition_threshold": 3,
+      "prev_overlap": 0.054,
+      "dialogue": 145
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "NGRAM_REPETITION",
+        "message": "8-gram 自我重复（辅助指标，不判失败）：。\"他说，\"我爹×5；我爹守了一辈子草×5；爹守了一辈子草原×5",
+        "severity": "info",
+        "blocking": false,
+        "detail": [
+          {
+            "phrase": "。\"他说，\"我爹",
+            "count": 5
+          },
+          {
+            "phrase": "我爹守了一辈子草",
+            "count": 5
+          },
+          {
+            "phrase": "爹守了一辈子草原",
+            "count": 5
+          },
+          {
+            "phrase": "守了一辈子草原。",
+            "count": 5
+          },
+          {
+            "phrase": "山上有牛。九十七",
+            "count": 5
+          },
+          {
+            "phrase": "上有牛。九十七头",
+            "count": 5
+          },
+          {
+            "phrase": "有牛。九十七头。",
+            "count": 5
+          },
+          {
+            "phrase": "。\"她说，\"我写",
+            "count": 4
+          },
+          {
+            "phrase": "我爹是牧人。我爹",
+            "count": 4
+          },
+          {
+            "phrase": "爹是牧人。我爹守",
+            "count": 4
+          },
+          {
+            "phrase": "是牧人。我爹守了",
+            "count": 4
+          },
+          {
+            "phrase": "牧人。我爹守了一",
+            "count": 4
+          },
+          {
+            "phrase": "人。我爹守了一辈",
+            "count": 4
+          },
+          {
+            "phrase": "。我爹守了一辈子",
+            "count": 4
+          },
+          {
+            "phrase": "。\"林晚说，\"苏",
+            "count": 4
+          },
+          {
+            "phrase": "\"林晚说，\"苏禾",
+            "count": 4
+          },
+          {
+            "phrase": "。\"苏牧没有说话",
+            "count": 3
+          },
+          {
+            "phrase": "\"苏牧没有说话。",
+            "count": 3
+          },
+          {
+            "phrase": "苏牧没有说话。\"",
+            "count": 3
+          },
+          {
+            "phrase": "头。\"\"九十七头",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "pass": true
+  },
+  "level2": {
+    "level": 2,
+    "metrics": {
+      "timeline": null,
+      "timeline_prev": "故事开始年 10月20日",
+      "plan_diff": {
+        "missing_state_changes": [],
+        "mismatched_state_changes": [],
+        "untouched_threads": [
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "untouched_foreshadowing": [
+          "F002",
+          "F004",
+          "F005",
+          "F006",
+          "F007",
+          "F008",
+          "F009",
+          "F010",
+          "F011",
+          "F014",
+          "F017",
+          "F018"
+        ],
+        "ok": true
+      }
+    },
+    "blocking": [],
+    "advisories": [
+      {
+        "code": "UNKNOWN_SPEAKER",
+        "message": "对白标签中的说话人 我知 不在 Canon 人物表中（可能是新人或误判）",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      },
+      {
+        "code": "PLANNED_THREAD_UNTOUCHED",
+        "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+        "severity": "warning",
+        "blocking": false
+      }
+    ],
+    "pass": true
+  },
+  "blocking": [],
+  "advisories": [
+    {
+      "code": "NGRAM_REPETITION",
+      "message": "8-gram 自我重复（辅助指标，不判失败）：。\"他说，\"我爹×5；我爹守了一辈子草×5；爹守了一辈子草原×5",
+      "severity": "info",
+      "blocking": false,
+      "detail": [
+        {
+          "phrase": "。\"他说，\"我爹",
+          "count": 5
+        },
+        {
+          "phrase": "我爹守了一辈子草",
+          "count": 5
+        },
+        {
+          "phrase": "爹守了一辈子草原",
+          "count": 5
+        },
+        {
+          "phrase": "守了一辈子草原。",
+          "count": 5
+        },
+        {
+          "phrase": "山上有牛。九十七",
+          "count": 5
+        },
+        {
+          "phrase": "上有牛。九十七头",
+          "count": 5
+        },
+        {
+          "phrase": "有牛。九十七头。",
+          "count": 5
+        },
+        {
+          "phrase": "。\"她说，\"我写",
+          "count": 4
+        },
+        {
+          "phrase": "我爹是牧人。我爹",
+          "count": 4
+        },
+        {
+          "phrase": "爹是牧人。我爹守",
+          "count": 4
+        },
+        {
+          "phrase": "是牧人。我爹守了",
+          "count": 4
+        },
+        {
+          "phrase": "牧人。我爹守了一",
+          "count": 4
+        },
+        {
+          "phrase": "人。我爹守了一辈",
+          "count": 4
+        },
+        {
+          "phrase": "。我爹守了一辈子",
+          "count": 4
+        },
+        {
+          "phrase": "。\"林晚说，\"苏",
+          "count": 4
+        },
+        {
+          "phrase": "\"林晚说，\"苏禾",
+          "count": 4
+        },
+        {
+          "phrase": "。\"苏牧没有说话",
+          "count": 3
+        },
+        {
+          "phrase": "\"苏牧没有说话。",
+          "count": 3
+        },
+        {
+          "phrase": "苏牧没有说话。\"",
+          "count": 3
+        },
+        {
+          "phrase": "头。\"\"九十七头",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "code": "UNKNOWN_SPEAKER",
+      "message": "对白标签中的说话人 我知 不在 Canon 人物表中（可能是新人或误判）",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T1，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T2，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    },
+    {
+      "code": "PLANNED_THREAD_UNTOUCHED",
+      "message": "计划要推进线程 T3，但 Delta 中没有该线程的变化",
+      "severity": "warning",
+      "blocking": false
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "kind": "manual",
+  "chapter": 1,
+  "commit_id": "MAN-7f71bdd5fa31",
+  "created_at": "2026-10-09T15:55:56",
+  "actor": "human",
+  "reason": "修正ch1：possession需为数组",
+  "patch": {
+    "characters": {
+      "苏牧": {
+        "possession": [
+          "父亲的扶手纸条",
+          "父亲的冬料手账"
+        ]
+      }
+    },
+    "character_changes": [],
+    "foreshadowing": {},
+    "threads": {},
+    "world_rules": [],
+    "knowledge_added": [],
+    "items": [],
+    "relationships": [],
+    "aliases": {},
+    "renames": {},
+    "entities": []
+  }
+}
